@@ -23,7 +23,12 @@ i18n
           submitYourApplication: "Оставить заявку",
           moreDetails: "Подробнее",
           faq: "Ответы на часто задаваемые вопросы",
+          choose: "Почему выбирают Navis Asset?",
           chooseTitle1: "Восстановим ваш заблокированный кошелёк",
+          chooseText1:
+            "Наша панель пользователя позволяет вам загружать данные в любое время",
+          chooseText2:
+            "Гарантируем, что резервная копия зашифрованного кошелька будет хнариться в сервере",
         },
       },
       en: {
@@ -41,7 +46,11 @@ i18n
           submitYourApplication: "Submit your application",
           moreDetails: "More details",
           faq: "Answers to frequently asked questions",
+          choose: "Why choose Navis Asset?",
           chooseTitle1: "We will restore your blocked wallet",
+          chooseText1: "Our user panel allows you to upload data anywhere time",
+          chooseText2:
+            "We guarantee that a backup copy of the encrypted wallet will be stored on the server",
         },
       },
     },
