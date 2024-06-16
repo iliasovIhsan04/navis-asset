@@ -42,12 +42,14 @@
   background-position: center;
   border-radius: 30px;
 }
-.team-box-conditions-block {
+.team-box-conditions-block,
+.we-will-help {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 10px;
   margin: 40px 0 0 0;
 }
+
 .team-box-conditions-box {
   background: #f5f7fa;
   border-radius: 20px;
@@ -79,4 +81,16 @@
 }
 .team-contitions-img3::before {
   background-image: url("../img/number3.svg") !important;
+}
+.we-will-help {
+  grid-template-columns: repeat(auto-fit, minmax(366px, 1fr)) !important;
+}
+.we-will-help div {
+  height: 275px;
+  padding: 30px;
+  border-radius: 20px;
+  background: #f5f7fa;
+}
+.we-will-help div:first-child {
+  background: red;
 }

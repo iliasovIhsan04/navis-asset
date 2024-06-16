@@ -3,6 +3,7 @@ import WalletRecovery from "./WalletRecovery";
 import Partners from "./Partners";
 import Faq from "./Faq/Faq";
 import WhyСhooseTeam from "./WhyСhooseTeam";
+import WeWillHelp from "./WeWillHelp";
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
       <WalletRecovery />
       <Partners />
       <WhyСhooseTeam />
+      <WeWillHelp />
       <Faq />
     </main>
   );

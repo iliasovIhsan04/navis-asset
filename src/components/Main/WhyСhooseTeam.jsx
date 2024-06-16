@@ -22,24 +22,17 @@ const WhyСhooseTeam = () => {
               className=" d-flex flex-column justify-content-between"
               style={{ height: "245px" }}
             >
-              <h3 className="title-h3">
-                Ваш кошелёк будет защищен воздушной прослойкой
-              </h3>
+              <h3 className="title-h3">{t("chooseTitle2")}</h3>
               <div className="team-contitions-img2"></div>
             </div>
           </div>
           <div className="team-box-conditions-box  d-flex flex-column justify-content-between">
-            <span className="text-span">
-              Наша панель пользователя позволяет вам загружать данные в любое
-              время
-            </span>
+            <span className="text-span">{t("chooseText3")}</span>
             <div
               className=" d-flex flex-column justify-content-between"
               style={{ height: "245px" }}
             >
-              <h3 className="title-h3">
-                Ваш забытый пароль будет восстановлен
-              </h3>
+              <h3 className="title-h3">{t("chooseTitle3")}</h3>
               <div className="team-contitions-img3"></div>
             </div>
           </div>

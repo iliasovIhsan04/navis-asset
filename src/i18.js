@@ -25,10 +25,15 @@ i18n
           faq: "Ответы на часто задаваемые вопросы",
           choose: "Почему выбирают Navis Asset?",
           chooseTitle1: "Восстановим ваш заблокированный кошелёк",
+          chooseTitle2: "Ваш кошелёк будет защищен воздушной прослойкой",
+          chooseTitle3: "Ваш забытый пароль будет восстановлен",
           chooseText1:
             "Наша панель пользователя позволяет вам загружать данные в любое время",
           chooseText2:
             "Гарантируем, что резервная копия зашифрованного кошелька будет хнариться в сервере",
+          chooseText3:
+            "Наша панель пользователя позволяет вам загружать данные в любое время",
+          weHelpTitleOne: "Если ваш пароль не работает",
         },
       },
       en: {
@@ -48,9 +53,13 @@ i18n
           faq: "Answers to frequently asked questions",
           choose: "Why choose Navis Asset?",
           chooseTitle1: "We will restore your blocked wallet",
+          chooseTitle2: "Your wallet will be protected by an air gap",
+          chooseTitle3: "Your forgotten password will be restored",
           chooseText1: "Our user panel allows you to upload data anywhere time",
           chooseText2:
             "We guarantee that a backup copy of the encrypted wallet will be stored on the server",
+          chooseText3: "Our user panel allows you to download data at any time",
+          weHelpTitleOne: "If your password doesn't work",
         },
       },
     },
