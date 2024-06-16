@@ -1,6 +1,8 @@
 import React from "react";
-import projectLogo from "../assets/img/navesAssetLogo.svg";
+import projectLogo from "../../assets/img/navesAssetLogo.svg";
 import { NavLink } from "react-router-dom";
+import Language from "./Language";
+import { t } from "i18next";
 
 const Header = () => {
   return (
@@ -12,7 +14,7 @@ const Header = () => {
           </NavLink>
           <div className="nav-link-box d-flex">
             <NavLink to="us" className="nav-link-page">
-              Услуги
+              {t("home")}
             </NavLink>
             <NavLink to="p" className="nav-link-page">
               Прайс
@@ -28,7 +30,9 @@ const Header = () => {
             </NavLink>
           </div>
           <div className="language-block d-flex aling-items-center">
-            <div className="language-box"></div>
+            <div className="language-box">
+              <Language />
+            </div>
             <button>Начать</button>
           </div>
         </div>
