@@ -33,8 +33,8 @@ export default function Faq() {
     };
     return (
         <div className='container'>
-            <div id="faq top-page">
-                <h2 className='title-page'> {t("faq")} </h2>
+            <div id="faq" className='top-page'>
+                <h2 className='title-page d-flex align-items-center justify-content-center'> {t("faq")} </h2>
                 <div className="faqAccordions">
                     {
                         data?.map((item, index) => (
