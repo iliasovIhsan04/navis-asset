@@ -22,7 +22,8 @@ i18n
             "Самый простой способ восстановить свой потерянный пароль от кошелька и расследовать обманутую криптовалюту",
           submitYourApplication: "Оставить заявку",
           moreDetails: "Подробнее",
-          faq: "Ответы на часто задаваемые вопросы"
+          faq: "Ответы на часто задаваемые вопросы",
+          chooseTitle1: "Восстановим ваш заблокированный кошелёк",
         },
       },
       en: {
@@ -39,7 +40,8 @@ i18n
             "The Easiest Way to Recover Your Lost Wallet Password and Investigate Scammed Cryptocurrency",
           submitYourApplication: "Submit your application",
           moreDetails: "More details",
-          faq: "Answers to frequently asked questions"
+          faq: "Answers to frequently asked questions",
+          chooseTitle1: "We will restore your blocked wallet",
         },
       },
     },

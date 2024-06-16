@@ -98,6 +98,9 @@
     transform: translateY(-10px);
   }
 }
+.partners {
+  margin: 130px 0 0 0;
+}
 .partners img {
   display: block;
   height: 70px;
@@ -106,9 +109,6 @@
   object-position: center;
   width: auto;
   padding: 5px;
-}
-.slider-auto-play {
-  margin: 100px 0 0 0;
 }
 .partners .slick-dots {
   display: none !important;

@@ -53,3 +53,10 @@
   margin-bottom: 0px !important;
   text-align: center;
 }
+.title-h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 1.1;
+
+}
