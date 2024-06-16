@@ -24,7 +24,7 @@ export default function AccordionFaq({ title, text, isOpen, onClick, contentRef 
                 className="answer-container"
                 style={{ maxHeight: isOpen ? contentRef.current.scrollHeight + "px" : "0px" }}
             >
-                <p className="answer-content textP white">{text}</p>
+                <p className="answer-description">{text}</p>
             </div>
             <div className="border"></div>
         </div>
