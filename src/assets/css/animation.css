@@ -100,7 +100,7 @@
 }
 .partners img {
   display: block;
-  height: 60px;
+  height: 70px;
   margin: 0 auto;
   object-fit: cover;
   object-position: center;
@@ -108,9 +108,7 @@
   padding: 5px;
 }
 .slider-auto-play {
-  background: var(--blue);
   margin: 100px 0 0 0;
-  padding: 10px 30px;
 }
 .partners .slick-dots {
   display: none !important;

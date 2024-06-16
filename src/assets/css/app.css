@@ -42,3 +42,14 @@
   background-position: center;
   border-radius: 30px;
 }
+.team-box-conditions-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px;
+}
+.team-box-conditions-box {
+  background: #f5f7fa;
+  border-radius: 20px;
+  padding: 30px;
+  height: 400px;
+}

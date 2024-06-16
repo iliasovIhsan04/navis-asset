@@ -46,3 +46,10 @@
   line-height: 1.2;
   color: var(--gray);
 }
+.title-page {
+  font-size: 50px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 0px !important;
+  text-align: center;
+}
