@@ -1,13 +1,15 @@
 import React from "react";
 import WalletRecovery from "./WalletRecovery";
 import Partners from "./Partners";
+import Faq from "./Faq";
 
 const Main = () => {
   return (
-    <div className="main">
+    <main className="main">
       <WalletRecovery />
       <Partners />
-    </div>
+      <Faq />
+    </main>
   );
 };
 
