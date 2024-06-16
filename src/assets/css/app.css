@@ -1,0 +1,45 @@
+.header {
+  height: 80px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.nav-link-box {
+  gap: 40px;
+}
+.language-block {
+  gap: 10px;
+}
+.language-box {
+  width: 118px;
+  height: 50px;
+  border-radius: 8px;
+  background: #f5f7fa;
+}
+.wallet-recovery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  height: 535px;
+  margin: 40px 0 0 0;
+}
+.wallet-recovery-inner-box {
+  background: #f5f7fa;
+  padding: 34px;
+  border-radius: 30px;
+}
+.wallet-recovery-img-box {
+  position: relative;
+  overflow: hidden;
+}
+.wallet-recovery-img-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/banner.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+
+}

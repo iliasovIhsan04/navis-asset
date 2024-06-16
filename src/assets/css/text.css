@@ -1,0 +1,48 @@
+.nav-link-page {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black);
+  position: relative;
+}
+.nav-link-page.active::before {
+  content: "";
+  position: absolute;
+  background: var(--red);
+  height: 6px;
+  left: 0;
+  width: 100%;
+  bottom: -10px;
+  transition: 0.3s;
+  border-radius: 8px;
+  color: var(--red);
+}
+.nav-link-page::after {
+  content: "";
+  position: absolute;
+  background: var(--red);
+  height: 6px;
+  left: 0;
+  width: 0;
+  bottom: -10px;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+.nav-link-page:hover {
+  color: #7b7979;
+}
+.nav-link-page:hover::after {
+  width: 100%;
+}
+.wallet-recovery-inner-box h1 {
+  margin-bottom: 0px !important;
+  font-size: 55px;
+  font-weight: 600;
+  color: var(--black);
+  line-height: 1.1;
+}
+.text-span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--gray);
+}

@@ -1,0 +1,44 @@
+button {
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+button:hover {
+  opacity: 0.7;
+}
+.language-block button {
+  background-color: #000000;
+  border: none;
+  color: #ffffff;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+a {
+  text-decoration: none !important;
+}
+a,
+a:active,
+a:focus {
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+:root {
+  --white: #ffffff;
+  --red: rgb(211, 65, 8);
+  --black: #000000;
+  --gray: #6f6f6f;
+}
+.submit-application-btn {
+  background: var(--red);
+  color: var(--white);
+  border: none;
+}
+.more-details-btn {
+  gap: 10px;
+}
