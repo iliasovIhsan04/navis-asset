@@ -1,7 +1,7 @@
 import React from "react";
 import WalletRecovery from "./WalletRecovery";
 import Partners from "./Partners";
-import Faq from "./Faq";
+import Faq from "./Faq/Faq";
 import WhyСhooseTeam from "./WhyСhooseTeam";
 
 const Main = () => {
@@ -9,8 +9,8 @@ const Main = () => {
     <main className="main">
       <WalletRecovery />
       <Partners />
-      <Faq />
       <WhyСhooseTeam />
+      <Faq />
     </main>
   );
 };
