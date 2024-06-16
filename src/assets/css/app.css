@@ -49,7 +49,6 @@
   gap: 10px;
   margin: 40px 0 0 0;
 }
-
 .team-box-conditions-box {
   background: #f5f7fa;
   border-radius: 20px;
@@ -94,20 +93,14 @@
   flex-direction: column;
   gap: 20px;
 }
-.we-will-help-box h3 {
-  line-height: 1.2;
-  max-width: 350px;
-}
+
 .we-will-help-box div {
   background: rgb(240, 221, 213) !important;
 }
 .we-will-help-box:first-child {
   background: var(--red);
 }
-.we-will-help-box-first h3,
-.we-will-help-box-first span {
-  color: var(--white);
-}
+
 .we-will-help-box-first div {
   background: var(--white) !important;
 }

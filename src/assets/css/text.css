@@ -59,3 +59,11 @@
   color: #000000;
   line-height: 1.1;
 }
+.we-will-help-box-first h3,
+.we-will-help-box-first span {
+  color: var(--white);
+}
+.we-will-help-box h3 {
+  line-height: 1.2;
+  max-width: 350px;
+}
