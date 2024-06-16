@@ -5,8 +5,12 @@
   font-family: Inter, sans-serif;
   transition: all 0.4s ease-in-out !important;
 }
+body {
+  line-height: normal !important;
+}
 .container {
   width: 90% !important;
   max-width: 1140px !important;
   margin: 0 auto;
+  --bs-gutter-x: 0rem !important;
 }

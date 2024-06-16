@@ -33,7 +33,20 @@ i18n
             "Гарантируем, что резервная копия зашифрованного кошелька будет хнариться в сервере",
           chooseText3:
             "Наша панель пользователя позволяет вам загружать данные в любое время",
-          weHelpTitleOne: "Если ваш пароль не работает",
+          weHelpTitleOne: "Если ваш пароль не ",
+          works: "работает",
+          weHelpTextOne:
+            "Вы думали, что знаете свой пароль, но теперь он не разблокирует ваш кошелек. Возможно, в нем используются другие цифры или другая заглавная буква, чем вы помните.",
+          weHelpTitleTwo: "Частичное восстановление исходной фразы",
+          weHelpTextTwo:
+            "Вы записали список слов, а парольная фраза - это некая комбинация этих слов.",
+          weHelpTitleThree: "Потеряли доступ к кошельку крупной сети",
+          weHelpTextThree:
+            "Вы потеряли доступ к обычному криптоактиву, такому как Bitcoin, Ethereum, Litecoin, Dogecoin, NFT или десяткам других альткоинов",
+          weHelpTitleFour: "Вас обманули",
+          scammers: "мошенники",
+          weHelpTextFour:
+            "Мы предлагаем услуги по розыску (а не по взысканию) для тех, кто хочет построить свое дело и, возможно, раскрыть реальную личность мошенника.",
         },
       },
       en: {
@@ -59,7 +72,20 @@ i18n
           chooseText2:
             "We guarantee that a backup copy of the encrypted wallet will be stored on the server",
           chooseText3: "Our user panel allows you to download data at any time",
-          weHelpTitleOne: "If your password doesn't work",
+          weHelpTitleOne: "If your password is not",
+          weHelpTextOne:
+            "You thought you knew your password, but now it won't unlock your wallet. Maybe it uses different numbers or a different capital letter than you remember.",
+          works: "works",
+          weHelpTitleTwo: "Partial restoration of the original phrase",
+          weHelpTextTwo:
+            "You have written down a list of words, and the passphrase is some combination of these words.",
+          weHelpTitleThree: "Lost access to a large network wallet",
+          weHelpTextThree:
+            "You have lost access to a common crypto asset such as Bitcoin, Ethereum, Litecoin, Dogecoin, NFT or dozens of other altcoins",
+          weHelpTitleFour: "You were deceived",
+          scammers: "scammers",
+          weHelpTextFour:
+            "We offer tracing (not collection) services for those who want to build their case and possibly uncover the real identity of the scammer.",
         },
       },
     },

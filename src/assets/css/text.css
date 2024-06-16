@@ -43,7 +43,7 @@
 .text-span {
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.2 !important;
   color: var(--gray);
 }
 .title-page {
@@ -58,5 +58,4 @@
   font-weight: 500;
   color: #000000;
   line-height: 1.1;
-
 }
