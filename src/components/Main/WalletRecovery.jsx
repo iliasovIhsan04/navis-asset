@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -7,17 +8,18 @@ const WalletRecovery = () => {
       <div className="wallet-recovery">
         <div className="wallet-recovery-inner-box d-flex flex-column justify-content-between">
           <h1>
-            Простое
-            <br /> и прозрачное восстановление кошелька
+            {t("simple")}
+            <br />
+            {t("transparent")}
           </h1>
-          <span className="text-span">
-            Самый простой способ восстановить свой потерянный пароль от кошелька
-            и расследовать обманутую криптовалюту
-          </span>
+          <span className="text-span"> {t("easiest")} </span>
           <div className="d-flex" style={{ gap: "10px" }}>
-            <button className="submit-application-btn">Оставить заявку</button>
+            <button className="submit-application-btn">
+              {" "}
+              {t("submitYourApplication")}{" "}
+            </button>
             <button className="more-details-btn d-flex aling-items-center">
-              Подробнее <GoArrowUpRight size={24} />
+              {t("moreDetails")} <GoArrowUpRight size={24} />
             </button>
           </div>
         </div>
