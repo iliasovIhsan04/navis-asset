@@ -1,0 +1,111 @@
+.position-relative {
+  position: relative;
+}
+
+.active-l {
+  width: 118px;
+  height: 50px;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: var(--navis-, #f5f7fa);
+  cursor: pointer;
+  margin: 0 15px 0 0;
+}
+
+.active-l::before {
+  position: absolute;
+  content: "";
+  width: 118px;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+}
+
+.language {
+  width: 118px;
+  height: 50px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background: var(--navis-, #f5f7fa);
+  position: relative;
+  cursor: pointer;
+  margin: 0 15px 0 0;
+}
+
+.active-ru-en {
+  display: flex;
+  /* align-items: center; */
+  gap: 6px;
+}
+
+.active-ru-en img{
+    width: 32px;
+    height: 24px;
+}
+
+.active-ru-en p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black, #171616);
+  @media screen and (max-width: 600px) {
+    font-weight: 400;
+  }
+}
+
+.down {
+  transform: rotate(-180deg);
+  transition: 2s;
+}
+
+.active-block {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 118px;
+  height: 50px;
+  padding: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background: var(--navis-, #f5f7fa);
+  z-index: 99;
+  animation: fadeIn 0.5s forwards;
+  cursor: pointer;
+}
+.active-none {
+  display: none;
+  animation: fadeOut 0.5s forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
