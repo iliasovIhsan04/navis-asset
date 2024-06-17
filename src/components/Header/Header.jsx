@@ -12,19 +12,19 @@ const Header = () => {
             <img src={projectLogo} alt="" />
           </NavLink>
           <div className="nav-link-box d-flex">
-            <NavLink to="us" className="nav-link-page">
+            <NavLink to="/services" className="nav-link-page">
               {t("services")}
             </NavLink>
-            <NavLink to="p" className="nav-link-page">
+            <NavLink to="/price" className="nav-link-page">
               {t("price")}
             </NavLink>
-            <NavLink to="o" className="nav-link-page">
+            <NavLink to="/reviews" className="nav-link-page">
               {t("reviews")}
             </NavLink>
-            <NavLink to="b" className="nav-link-page">
+            <NavLink to="/about-us" className="nav-link-page">
               {t("aboutUs")}
             </NavLink>
-            <NavLink to="k" className="nav-link-page">
+            <NavLink to="/contacts" className="nav-link-page">
               {t("contacts")}
             </NavLink>
           </div>

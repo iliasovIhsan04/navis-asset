@@ -47,6 +47,7 @@ i18n
           scammers: "мошенники",
           weHelpTextFour:
             "Мы предлагаем услуги по розыску (а не по взысканию) для тех, кто хочет построить свое дело и, возможно, раскрыть реальную личность мошенника.",
+            about: "О Navis Asset",
         },
       },
       en: {
@@ -86,6 +87,7 @@ i18n
           scammers: "scammers",
           weHelpTextFour:
             "We offer tracing (not collection) services for those who want to build their case and possibly uncover the real identity of the scammer.",
+            about: "About Navis Asset",
         },
       },
     },
