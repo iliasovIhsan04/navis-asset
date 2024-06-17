@@ -47,13 +47,20 @@ i18n
           scammers: "мошенники",
           weHelpTextFour:
             "Мы предлагаем услуги по розыску (а не по взысканию) для тех, кто хочет построить свое дело и, возможно, раскрыть реальную личность мошенника.",
-            about: "О Navis Asset",
-            founder: "Основатель:",
-            founderFN: "Тилек Бегалиев",
-            guarantee: "Гарантия",
-            professional: "Профессиональных сотрудников команды",
-            satisfiedClients: "Довольных клиентов",
-            qualityWork: "Качественная работа",
+          about: "О Navis Asset",
+          founder: "Основатель:",
+          founderFN: "Тилек Бегалиев",
+          guarantee: "Гарантия",
+          professional: "Профессиональных сотрудников команды",
+          satisfiedClients: "Довольных клиентов",
+          qualityWork: "Качественная работа",
+          guaranteeTitle:
+            "Гарантируем, что ваша криптовалюта всегда останется у вас",
+          guaranteeText:
+            "Методы, которые мы используем для восстановления учетных записей наших клиентов, сильно различаются в зависимости от конкретного случая. В случае восстановления пароля мы проводим наших клиентов через извлечение резервной копии зашифрованного закрытого ключа и составление полного списка возможных вариантов паролей. Затем мы передаем данные клиента на защищенные серверы для взлома паролей, которые используют полученные от клиента данные для перебора миллиардов или триллионов возможных комбинаций паролей, пока не будет найден правильный пароль.",
+          aboutFounders: "О наших основателях",
+          aboutFoundersText:
+            "CryptoAssetRecovery.com был создан для того, чтобы помочь владельцам криптовалюты обезопасить свои активы. Компания была основана в 2017 году Крисом Бруксом, опытным профессионалом в области технологий с богатым опытом в индустрии. Ранее он был вице-президентом технологий в Carescout и программистом в Fidelity Investments. В 2021 году компания стала семейным бизнесом, когда к команде присоединился сын Криса, Чарльз. Чарльз - студент компьютерных наук в Университете Вермонта, который приносит свежий взгляд и обширные технические знания на стол. Вместе Крис и Чарльз являются лидерами в области восстановления криптовалютных активов, помогая привнести масштабное принятие криптовалют в мир. Сегодня мы гордимся тем, что находимся на передовой этой захватывающей и быстро развивающейся индустрии. Не позволяйте забытому паролю лишить вас ваших цифровых богатств. Доверьтесь нам быть вашими крипто-шерифами, на миссии по восстановлению ваших потерянных активов.",
         },
       },
       en: {
@@ -93,13 +100,21 @@ i18n
           scammers: "scammers",
           weHelpTextFour:
             "We offer tracing (not collection) services for those who want to build their case and possibly uncover the real identity of the scammer.",
-            about: "About Navis Asset",
-            founder: "Founder:",
-            founderFN: "Tilek Begaliev",
-            guarantee: "Guarantee",
-            professional: "Professional team staff",
-            satisfiedClients: "Satisfied clients",
-            qualityWork: "Quality work",
+          about: "About Navis Asset",
+          founder: "Founder:",
+          founderFN: "Tilek Begaliev",
+          guarantee: "Guarantee",
+          professional: "Professional team staff",
+          satisfiedClients: "Satisfied clients",
+          qualityWork: "Quality work",
+          guaranteeTitle:
+            "We guarantee that your cryptocurrency will always remain with you",
+          guaranteeText:
+            "The methods we use to recover our clients' accounts vary greatly from case to case. In the case of password recovery, we guide our clients through retrieving a backup copy of the encrypted private key and compiling a comprehensive list of possible password options. We then transmit the client's data to secure password-cracking servers, which use the client's data to try billions or trillions of possible password combinations until the correct password is found.",
+          aboutFounders: "About our founders",
+          aboutFoundersText:
+            "CryptoAssetRecovery.com was created to help cryptocurrency owners secure their assets. The company was founded in 2017 by Chris Brooks, a seasoned technology professional with extensive industry experience. Previously, he was vice president of technology at Carescout and a software engineer at Fidelity Investments. The company became a family business in 2021 when Chris' son, Charles, joined the team. Charles is a computer science student at the University of Vermont who brings a fresh perspective and extensive technical knowledge to the table. Together, Chris and Charles are leaders in the cryptocurrency asset recovery space, helping to bring widespread cryptocurrency adoption to the world. Today we are proud to be at the forefront of this exciting and rapidly growing industry. Don't let a forgotten password rob you of your digital wealth. Trust us to be your crypto sheriffs, on a mission to recover your lost assets.",
+            
         },
       },
     },

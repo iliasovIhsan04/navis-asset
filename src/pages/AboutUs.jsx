@@ -42,6 +42,16 @@ export default function AboutUs() {
                         </div>
                     </div>
                 </div>
+                <div className="garants">
+                    <div className="d-grid garant">
+                        <h3 className='subtitle2'> {t("guaranteeTitle")} </h3>
+                        <p className='team-box-conditions-box'> {t("guaranteeText")} </p>
+                    </div>
+                    <div className="d-grid garant">
+                        <h3 className='subtitle2'> {t("aboutFounders")} </h3>
+                        <p className='team-box-conditions-box'> {t("aboutFoundersText")} </p>
+                    </div>
+                </div>
             </div>
         </div>
     )
