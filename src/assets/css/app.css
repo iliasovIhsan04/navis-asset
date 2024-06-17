@@ -16,21 +16,28 @@
 }
 .wallet-recovery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 10px;
-  height: 535px;
   margin: 40px 0 0 0;
 }
 .wallet-recovery-inner-box {
   background: #f5f7fa;
   padding: 34px 50px 34px 34px;
   border-radius: 30px;
+  height: 535px;
 }
-.wallet-recovery-img-box {
+.wallet-recovery-img-box,
+.return-the-money {
   position: relative;
   overflow: hidden;
+  height: 535px;
 }
-.wallet-recovery-img-box::before {
+.return-the-money {
+  height: 285px !important;
+  padding: 51px 51px 38px 51px;
+}
+.wallet-recovery-img-box::before,
+.return-the-money::before {
   content: "";
   position: absolute;
   top: 0;
@@ -41,6 +48,9 @@
   background-size: cover;
   background-position: center;
   border-radius: 30px;
+}
+.return-the-money::before {
+  background-image: url("../img/formBackground.svg") !important;
 }
 .team-box-conditions-block,
 .we-will-help {

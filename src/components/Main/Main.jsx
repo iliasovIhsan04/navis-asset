@@ -4,6 +4,7 @@ import Partners from "./Partners";
 import Faq from "./Faq/Faq";
 import WhyСhooseTeam from "./WhyСhooseTeam";
 import WeWillHelp from "./WeWillHelp";
+import ReturnTheMoney from "./ReturnTheMoney";
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
       <WhyСhooseTeam />
       <WeWillHelp />
       <Faq />
+      <ReturnTheMoney />
     </main>
   );
 };
