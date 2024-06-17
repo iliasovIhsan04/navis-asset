@@ -48,6 +48,12 @@ i18n
           weHelpTextFour:
             "Мы предлагаем услуги по розыску (а не по взысканию) для тех, кто хочет построить свое дело и, возможно, раскрыть реальную личность мошенника.",
             about: "О Navis Asset",
+            founder: "Основатель:",
+            founderFN: "Тилек Бегалиев",
+            guarantee: "Гарантия",
+            professional: "Профессиональных сотрудников команды",
+            satisfiedClients: "Довольных клиентов",
+            qualityWork: "Качественная работа",
         },
       },
       en: {
@@ -88,6 +94,12 @@ i18n
           weHelpTextFour:
             "We offer tracing (not collection) services for those who want to build their case and possibly uncover the real identity of the scammer.",
             about: "About Navis Asset",
+            founder: "Founder:",
+            founderFN: "Tilek Begaliev",
+            guarantee: "Guarantee",
+            professional: "Professional team staff",
+            satisfiedClients: "Satisfied clients",
+            qualityWork: "Quality work",
         },
       },
     },

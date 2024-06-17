@@ -15,7 +15,7 @@ const WalletRecovery = () => {
           <span className="text-span"> {t("easiest")} </span>
           <div className="d-flex" style={{ gap: "10px" }}>
             <button className="submit-application-btn">
-              {t("submitYourApplication")}{" "}
+              {t("submitYourApplication")}
             </button>
             <button className="more-details-btn d-flex aling-items-center">
               {t("moreDetails")} <GoArrowUpRight size={24} />

@@ -58,3 +58,59 @@
   height: 1px !important;
   background: #d8d8d8 !important;
 }
+.about-us h1{
+  margin: 40px 0;
+}
+.guarantees{
+  margin-top: 0;
+}
+.guarantee-card{
+  width: 100%;
+  border-radius: 12px;
+  padding: 20px;
+}
+.guarantee-card:first-child{
+  background: #000000;
+  color: #ffffff !important;
+}
+.guarantee-card:first-child h2{
+  color: #ffffff !important;
+  text-align: left;
+}
+.guarantee-card:last-child{
+  background: #F5F7FA;
+}
+.about{
+  display: grid;
+  gap: 10px;
+}
+.about h2{
+  text-align: left;
+}
+.g-10{
+  gap: 10px;
+}
+.customer-card{
+  width: 100%;
+  border-radius: 12px;
+  padding: 20px;
+  height: 145px;
+}
+.customer-card:nth-child(2) h2{
+  color: #ffffff;
+}
+.customer-card:nth-child(1){
+  background: #F5F7FA;
+}
+.customer-card:nth-child(2){
+  color: #ffffff;
+  background: linear-gradient(59.33deg, #D4151C 22.38%, #D35400 87.43%);
+}
+.customer-card-last{
+  background: #F5F7FA !important;
+  color: #000000;
+}
+
+.customer-card-last h2{
+  color: #000000 !important;
+}
