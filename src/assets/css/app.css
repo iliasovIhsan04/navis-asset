@@ -26,8 +26,7 @@
   border-radius: 30px;
   height: 535px;
 }
-.wallet-recovery-img-box,
-.return-the-money {
+.wallet-recovery-img-box {
   position: relative;
   overflow: hidden;
   height: 535px;
@@ -35,9 +34,17 @@
 .return-the-money {
   height: 285px !important;
   padding: 51px 51px 38px 51px;
+  background-image: url("../img/formBackground.svg") !important;
+  border-radius: 20px;
 }
-.wallet-recovery-img-box::before,
-.return-the-money::before {
+.return-the-money h2 {
+  max-width: 450px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--white);
+}
+.wallet-recovery-img-box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -48,9 +55,6 @@
   background-size: cover;
   background-position: center;
   border-radius: 30px;
-}
-.return-the-money::before {
-  background-image: url("../img/formBackground.svg") !important;
 }
 .team-box-conditions-block,
 .we-will-help {
@@ -147,4 +151,13 @@
 }
 .interior-box-icons4::before {
   background-image: url("../img//shield.svg") !important;
+}
+.money-btn_block span {
+  max-width: 246px;
+  color: #f5f7fa;
+  text-align: end;
+}
+.money-btn_block button {
+  border: none;
+  margin-left: auto;
 }

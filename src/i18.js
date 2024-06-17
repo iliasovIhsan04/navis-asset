@@ -61,6 +61,10 @@ i18n
           aboutFounders: "О наших основателях",
           aboutFoundersText:
             "CryptoAssetRecovery.com был создан для того, чтобы помочь владельцам криптовалюты обезопасить свои активы. Компания была основана в 2017 году Крисом Бруксом, опытным профессионалом в области технологий с богатым опытом в индустрии. Ранее он был вице-президентом технологий в Carescout и программистом в Fidelity Investments. В 2021 году компания стала семейным бизнесом, когда к команде присоединился сын Криса, Чарльз. Чарльз - студент компьютерных наук в Университете Вермонта, который приносит свежий взгляд и обширные технические знания на стол. Вместе Крис и Чарльз являются лидерами в области восстановления криптовалютных активов, помогая привнести масштабное принятие криптовалют в мир. Сегодня мы гордимся тем, что находимся на передовой этой захватывающей и быстро развивающейся индустрии. Не позволяйте забытому паролю лишить вас ваших цифровых богатств. Доверьтесь нам быть вашими крипто-шерифами, на миссии по восстановлению ваших потерянных активов.",
+          moneyText: "Ваши деньги обратно в вашем кармане!",
+          moneyText2:
+            'Возьми свои финансы снова под контроль. Нажми на "Оставить заявку", чтобы получить помощь.',
+          moneyBtn: "Оставить заявку",
         },
       },
       en: {
@@ -114,7 +118,10 @@ i18n
           aboutFounders: "About our founders",
           aboutFoundersText:
             "CryptoAssetRecovery.com was created to help cryptocurrency owners secure their assets. The company was founded in 2017 by Chris Brooks, a seasoned technology professional with extensive industry experience. Previously, he was vice president of technology at Carescout and a software engineer at Fidelity Investments. The company became a family business in 2021 when Chris' son, Charles, joined the team. Charles is a computer science student at the University of Vermont who brings a fresh perspective and extensive technical knowledge to the table. Together, Chris and Charles are leaders in the cryptocurrency asset recovery space, helping to bring widespread cryptocurrency adoption to the world. Today we are proud to be at the forefront of this exciting and rapidly growing industry. Don't let a forgotten password rob you of your digital wealth. Trust us to be your crypto sheriffs, on a mission to recover your lost assets.",
-            
+          moneyText: "Your money back in your pocket!",
+          moneyText2:
+            'Take control of your finances again. Click on "Submit a request" to get help.',
+          moneyBtn: "Submit your application",
         },
       },
     },
