@@ -1,3 +1,9 @@
+:root {
+  --white: #ffffff;
+  --red: rgb(211, 65, 8);
+  --black: #000000;
+  --gray: #6f6f6f;
+}
 button {
   padding: 10px 20px !important;
   border-radius: 8px !important;
@@ -28,12 +34,7 @@ a:focus {
   outline: 0;
   -webkit-tap-highlight-color: transparent;
 }
-:root {
-  --white: #ffffff;
-  --red: rgb(211, 65, 8);
-  --black: #000000;
-  --gray: #6f6f6f;
-}
+
 .submit-application-btn {
   background: var(--red);
   color: var(--white);
