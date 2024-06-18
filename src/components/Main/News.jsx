@@ -3,11 +3,11 @@ import { Main } from "../../api";
 
 const News = () => {
   const [news, setNews] = useState([]);
-
   useEffect(() => {
     const fetchData = async () => {
       const res = await Main.getNews();
       setNews(res);
+    //   console.log(res);
     };
     fetchData();
   }, []);
@@ -17,14 +17,14 @@ const News = () => {
   return (
     <div className="container">
       <div className="news wallet-recovery">
-        <div className="news-box"> </div>
+        {/* <div className="news-box"> </div> */}
         <div className="news-box">
-          {news?.map((newsItem) => (
-            <div key={newsItem.id}>
+          {news?.map((index, item) => (
+            <div key={index}>
               <div>
-                <h1>{newsItem.title}</h1>
-                <p>{newsItem.description}</p>
-                {newsItem.comments.map((comment, index) => (
+                <h1>{item.description}</h1>
+                <p>{item.description}</p>
+                {item?.comments?.map((index, comment) => (
                   <div key={index}>
                     <h2>{comment.author}</h2>
                     <p>{comment.created_at}</p>
