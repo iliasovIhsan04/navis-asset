@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const lang = localStorage.getItem("i18nextLng");
+const lang = localStorage.getItem("lang");
 export const instance = axios.create({
   baseURL: "http://192.168.1.221:8000",
 });
