@@ -5,11 +5,13 @@ import AboutUs from "./pages/AboutUs";
 import Price from "./pages/Price";
 
 function App() {
+  const lang = localStorage.getItem("lang" || "ru");
   return (
     <div className="app">
       <Header />
       <Routes>
         <Route path="/" element={<Main />} /> 
+        <Route path={`/${lang}`} element={<Main />} /> 
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/price" element={<Price />} />
       </Routes>

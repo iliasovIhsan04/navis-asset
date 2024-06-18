@@ -65,6 +65,9 @@ i18n
           moneyText2:
             'Возьми свои финансы снова под контроль. Нажми на "Оставить заявку", чтобы получить помощь.',
           moneyBtn: "Оставить заявку",
+          priceText1:
+            "Мы также знаем, что процесс восстановления криптовалютных активов часто включает в себя чувствительную личную и финансовую информацию, поэтому мы обрабатываем каждый случай с самым высоким уровнем безопасности и конфиденциальности. За восстановление паролей мы берем комиссию в размере 20% от восстановленных токенов, что отражает ценность, которую мы приносим на стол, благодаря нашей экспертизе и безопасной обработке каждого случая. И вот лучшая часть: наша услуга безопасна! Это означает, что вы платите нам только в случае успешного восстановления ваших активов. Если мы не можем взломать кошелек, вы не платите ни цента. Мы верим в то, что слова должны соответствовать делам, и поэтому мы уверены в наших способностях вернуть ваши активы.",
+          priceText2: "",
         },
       },
       en: {
@@ -122,6 +125,10 @@ i18n
           moneyText2:
             'Take control of your finances again. Click on "Submit a request" to get help.',
           moneyBtn: "Submit your application",
+          priceText1:
+            "We understand that entrusting your assets to us is a serious matter. Therefore, we take our work to recover your lost assets very seriously. Our expertise and knowledge in cryptocurrency asset recovery is what sets us apart and is what allows us to crack wallet passwords so you can get your assets back.",
+          priceText2:
+            "We also know that the cryptocurrency asset recovery process often involves sensitive personal and financial information, which is why we handle every case with the highest level of security and confidentiality.",
         },
       },
     },
