@@ -161,3 +161,7 @@
   border: none;
   margin-left: auto;
 }
+.news-box {
+  height: 510px;
+  background: red;
+}

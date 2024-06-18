@@ -15,4 +15,14 @@ export const Main = {
         throw error;
       });
   },
+  getNews: () => {
+    return instance
+      .get(`/api/news/${lang}/`)
+      .then((response) => {
+        return response.data;
+      })
+      .catch((error) => {
+        throw error;
+      });
+  },
 };
