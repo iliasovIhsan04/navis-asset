@@ -36,18 +36,17 @@ export default function Faq() {
     useEffect(() => {
         const fetchData = async () => {
             const res = await Main.getFaq();
-            setFaq(res)
+            setFaq(res.FAQ)
         }
         fetchData();
     }, [])
-    const dataFaq = faq.FAQ
     return (
         <div className='container'>
             <div id="faq" className='top-page'>
                 <h2 className='title-page d-flex align-items-center justify-content-center'> {t("faq")} </h2>
                 <div className="faqAccordions">
                     {
-                        dataFaq?.map((item, index) => (
+                        faq?.map((item, index) => (
                             <AccordionFaq
                                 key={index}
                                 contentRef={contentRef}
