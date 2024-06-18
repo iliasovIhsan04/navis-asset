@@ -81,6 +81,8 @@ i18n
           checkTitle3: "Опциональная консультация в Zoom",
           checkTitle4: "Профессиоанальная команда",
           checkTitle5: "Индивидуальная разработка",
+          reviewsFrom: "Отзывы довольных клиентов", 
+          
         },
       },
       en: {
@@ -154,6 +156,7 @@ i18n
           checkTitle3: "Optional consultation via Zoom",
           checkTitle4: "Professional team",
           checkTitle5: "Individual development",
+          reviewsFrom: "Reviews from satisfied clients", 
         },
       },
     },

@@ -79,9 +79,16 @@
   font-weight: 500;
   line-height: 1.2;
 }
+.subtitle1 {
+  font-weight: 500;
+}
 
 .oval1 {
   font-size: 14px;
   font-weight: 400;
   line-height: 16.94px;
+}
+
+.oval2 {
+  font-size: 14px;
 }

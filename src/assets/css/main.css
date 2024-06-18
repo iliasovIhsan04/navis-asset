@@ -128,8 +128,9 @@
   font-weight: 600;
   line-height: 1.1;
 }
-.subtitle1{
-  font-weight: 500;
+.subtitle3{
+  font-size: 16px;
+  margin-bottom: 0 !important;
 }
 .l{
   text-align: left;
@@ -153,11 +154,33 @@
   display: grid;
   gap: 20px;
 }
-
 .price-card:last-child{
   display: grid;
   gap: 32px;
 }
 .checks{
   grid-gap: 20px;
+}
+.reviews{
+  margin: 40px 0;
+}
+.reviews h1{
+  margin-bottom: 40px !important;
+}
+.review{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+.review-card{
+  padding: 20px;
+  background-color: var(--grey);
+  border-radius: 12px;
+  gap: 15px;
+}
+
+.user{
+  width: 40px;
+  height: 40px;
+  background: var(--white);
+  border-radius: 8px;
 }

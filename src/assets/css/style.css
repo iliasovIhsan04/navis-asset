@@ -3,6 +3,7 @@
   --red: rgb(211, 65, 8);
   --black: #000000;
   --gray: #6f6f6f;
+  --grey: #F5F7FA;
 }
 button {
   padding: 10px 20px !important;
