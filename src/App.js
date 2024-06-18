@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import AboutUs from "./pages/AboutUs";
 import Price from "./pages/Price";
+import Reviews from "./pages/Reviews";
 
 function App() {
   const lang = localStorage.getItem("lang" || "ru");
@@ -14,6 +15,7 @@ function App() {
         <Route path={`/${lang}`} element={<Main />} /> 
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/price" element={<Price />} />
+        <Route path="/reviews" element={<Reviews />} />
       </Routes>
     </div>
   );
