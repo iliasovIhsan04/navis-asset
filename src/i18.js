@@ -66,8 +66,21 @@ i18n
             'Возьми свои финансы снова под контроль. Нажми на "Оставить заявку", чтобы получить помощь.',
           moneyBtn: "Оставить заявку",
           priceText1:
-            "Мы также знаем, что процесс восстановления криптовалютных активов часто включает в себя чувствительную личную и финансовую информацию, поэтому мы обрабатываем каждый случай с самым высоким уровнем безопасности и конфиденциальности. За восстановление паролей мы берем комиссию в размере 20% от восстановленных токенов, что отражает ценность, которую мы приносим на стол, благодаря нашей экспертизе и безопасной обработке каждого случая. И вот лучшая часть: наша услуга безопасна! Это означает, что вы платите нам только в случае успешного восстановления ваших активов. Если мы не можем взломать кошелек, вы не платите ни цента. Мы верим в то, что слова должны соответствовать делам, и поэтому мы уверены в наших способностях вернуть ваши активы.",
-          priceText2: "",
+            "Мы понимаем, что доверить нам ваши активы - это серьезное дело. Поэтому мы очень ответственно относимся к нашей работе по восстановлению ваших потерянных активов. Наша экспертиза и знания в области восстановления криптовалютных активов - это то, что отличает нас, и именно это позволяет нам взламывать пароли кошельков, чтобы вы могли вернуть свои активы.",
+          priceText2:
+            "Мы также знаем, что процесс восстановления криптовалютных активов часто включает в себя чувствительную личную и финансовую информацию, поэтому мы обрабатываем каждый случай с самым высоким уровнем безопасности и конфиденциальности.",
+          priceText3:
+            "За восстановление паролей мы берем комиссию в размере 20% от восстановленных токенов, что отражает ценность, которую мы приносим на стол, благодаря нашей экспертизе и безопасной обработке каждого случая.",
+          priceText4:
+            "И вот лучшая часть: наша услуга безопасна! Это означает, что вы платите нам только в случае успешного восстановления ваших активов. Если мы не можем взломать кошелек, вы не платите ни цента. Мы верим в то, что слова должны соответствовать делам, и поэтому мы уверены в наших способностях вернуть ваши активы.",
+          walletRecovery: "Восстановление кошелька",
+          fromTheWallet: "от кошелька",
+          startRecovery: "Начать восстановление",
+          checkTitle1: "Выделенный сотрудник службы поддержки",
+          checkTitle2: "Время ответа в течение 24 часов",
+          checkTitle3: "Опциональная консультация в Zoom",
+          checkTitle4: "Профессиоанальная команда",
+          checkTitle5: "Индивидуальная разработка",
         },
       },
       en: {
@@ -126,9 +139,21 @@ i18n
             'Take control of your finances again. Click on "Submit a request" to get help.',
           moneyBtn: "Submit your application",
           priceText1:
-            "We understand that entrusting your assets to us is a serious matter. Therefore, we take our work to recover your lost assets very seriously. Our expertise and knowledge in cryptocurrency asset recovery is what sets us apart and is what allows us to crack wallet passwords so you can get your assets back.",
+            "We understand that trusting us with your assets is a serious matter. Therefore, we take our work to recover your lost assets very seriously. Our expertise and knowledge in cryptocurrency asset recovery is what sets us apart and is what allows us to crack wallet passwords so you can get your assets back.",
           priceText2:
             "We also know that the cryptocurrency asset recovery process often involves sensitive personal and financial information, which is why we handle every case with the highest level of security and confidentiality.",
+          priceText3:
+            "For password recovery, we charge a fee of 20% of recovered tokens, which reflects the value we bring to the table through our expertise and secure handling of each case.",
+          priceText4:
+            "And here's the best part: our service is safe! This means that you only pay us if your assets are successfully recovered. If we can't hack the wallet, you don't pay a cent. We believe in matching words with actions, which is why we are confident in our ability to recover your assets.",
+          walletRecovery: "Wallet recovery",
+          fromTheWallet: "from the wallet",
+          startRecovery: "Start recovery",
+          checkTitle1: "Dedicated support staff",
+          checkTitle2: "Response time within 24 hours",
+          checkTitle3: "Optional consultation via Zoom",
+          checkTitle4: "Professional team",
+          checkTitle5: "Individual development",
         },
       },
     },

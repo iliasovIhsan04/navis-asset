@@ -128,7 +128,12 @@
   font-weight: 600;
   line-height: 1.1;
 }
-
+.subtitle1{
+  font-weight: 500;
+}
+.l{
+  text-align: left;
+}
 .garants p{
   padding: 0;
   background: none;
@@ -136,4 +141,23 @@
   color: #6F6F6F;
   margin-left: auto;
 }
+.white{
+  color: var(--white);
+}
+.price-card{
+  height: 563px;
+  padding: 30px;
+  border-radius: 30px;
+}
+.price-card:first-child{
+  display: grid;
+  gap: 20px;
+}
 
+.price-card:last-child{
+  display: grid;
+  gap: 32px;
+}
+.checks{
+  grid-gap: 20px;
+}

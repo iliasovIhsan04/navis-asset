@@ -7,6 +7,7 @@
 button {
   padding: 10px 20px !important;
   border-radius: 8px !important;
+  height: 50px;
   outline: none;
   cursor: pointer;
   font-size: 16px;
@@ -38,6 +39,11 @@ a:focus {
 .submit-application-btn {
   background: var(--red);
   color: var(--white);
+  border: none;
+}
+.btn-white{
+  color: var(--black);
+  background: var(--white);
   border: none;
 }
 .more-details-btn {
