@@ -83,6 +83,7 @@ i18n
           checkTitle5: "Индивидуальная разработка",
           reviewsFrom: "Отзывы довольных клиентов", 
           
+          technical: "Техническая поддержка, сотрудничество и PR"
         },
       },
       en: {
@@ -157,6 +158,7 @@ i18n
           checkTitle4: "Professional team",
           checkTitle5: "Individual development",
           reviewsFrom: "Reviews from satisfied clients", 
+          technical: "Technical support, cooperation and PR"
         },
       },
     },
