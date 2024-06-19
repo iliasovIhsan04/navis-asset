@@ -98,3 +98,39 @@
   line-height: 1.1;
   color: var(--black);
 }
+.title-internal-footer {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
+}
+.footer-text {
+  color: #797979 !important;
+}
+.link-footer {
+  font-size: 16px;
+  font-weight: 500;
+  color: #797979;
+}
+.made-with p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #9a9a9a;
+  margin-bottom: 0px !important;
+}
+.made-with h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+}
+.made-with h2 > a {
+  color: var(--red);
+  text-decoration: underline !important;
+}
+.the-link {
+  text-transform: uppercase;
+  color: var(--red);
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 36px;
+  text-decoration: underline !important;
+}

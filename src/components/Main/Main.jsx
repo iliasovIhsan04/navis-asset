@@ -6,6 +6,7 @@ import WhyСhooseTeam from "./WhyСhooseTeam";
 import WeWillHelp from "./WeWillHelp";
 import ReturnTheMoney from "./ReturnTheMoney";
 import News from "./News";
+import Footer from "../Footer";
 
 const Main = () => {
   return (
@@ -14,9 +15,10 @@ const Main = () => {
       <Partners />
       <WhyСhooseTeam />
       <WeWillHelp />
-      <Faq />
-      <News />
+      {/* <Faq /> */}
+      {/* <News /> */}
       <ReturnTheMoney />
+      <Footer />
     </main>
   );
 };

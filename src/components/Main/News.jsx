@@ -8,9 +8,9 @@ const News = () => {
     const fetchData = async () => {
       const res = await Main.getNews();
       if (lang === "ru") {
-        setNews(res.ru);
+        setNews(res);
       } else {
-        setNews(res.en);
+        setNews(res);
       }
     };
     fetchData();
@@ -30,18 +30,20 @@ const News = () => {
             </div>
           </div>
         ))}
-        <div className="news-box">
+        <div className="news-box news-block2">
           {news.map((item, index) => (
-            <div className="news-box2 " key={index}>
-              <div className="news-boxs2-img">
-                <img src={item.image} alt="" />
-              </div>
-              <div className="griting">
-                <div className="d-flex flex-column justify-content-between">
+            <div className="news-box2" key={index}>
+              <div className="griting d-flex">
+                <div className="news-box2-img">
+                  <img src={item.image} alt="" />
+                </div>
+                <div className="news-text-box d-flex flex-column justify-content-between">
                   <h4 className="news-description">{item.title}</h4>
                   <span>{item.created_at}</span>
                 </div>
-                <div className="news-icons  d-flex justify-content-between align-items-end"></div>
+              </div>
+              <div className="gridddddddd">
+                <div className="news-icons"></div>
               </div>
             </div>
           ))}

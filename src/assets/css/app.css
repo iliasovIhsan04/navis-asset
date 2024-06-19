@@ -161,9 +161,11 @@
   border: none;
   margin-left: auto;
 }
+.news {
+  gap: 20px !important;
+}
 .news-box {
   min-height: 510px;
-  background: red;
 }
 .news-inter-box {
   display: grid;
@@ -181,39 +183,123 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: bisque;
+  background: rgb(240, 221, 213) !important;
 }
-.title-inter-block {
+.title-inter-block,
+.news-box2 {
   gap: 20px;
 }
 .gap-page {
   gap: 50px;
 }
 .news-box2 {
-  display: flex;
+  align-items: flex-end;
+  display: grid;
+  grid-template-columns: 1.8fr 0.2fr !important;
 }
-.news-boxs2-img img {
-  object-fit: cover;
-  object-position: center;
-  width: 100% !important;
-  height: 100% !important;
+.news-block2 {
+  gap: 30px !important;
+  display: grid;
 }
-.news-boxs2-img {
-  width: 100%;
+.news-box2-img {
   width: 105px !important;
   height: 105px !important;
   border-radius: 10px;
   overflow: hidden;
-  background: green;
-
 }
-.griting {
-  width: 100%;
+.news-box2-img img {
+  object-fit: cover;
+  object-position: center;
+  width: 105px !important;
+  height: 105px !important;
+}
+.news-text-box {
+  margin-left: 20px;
+}
+.gridddddddd {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: flex-end;
 }
-.griting div {
-  max-width: 350px;
-  background: blue;
+.footer {
+  width: 100%;
+  min-height: 360px;
+  padding-top: 46px;
+}
+.footer-box2 {
+  padding-top: 15px;
+  display: flex;
+}
+.footer-icons {
+  position: relative;
+  width: 133px;
+  height: 55px;
+  margin-bottom: 14px;
+}
+.footer-icons::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../img/navesAssetLogo.svg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.link-footer-block {
+  margin-top: 30px !important;
+  gap: 16px;
+}
+
+.social-network-box1,
+.social-network-box2,
+.social-network-box3,
+.social-network-box4 {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background: var(--red);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.social-network-box1::before,
+.social-network-box2::before,
+.social-network-box3::before,
+.social-network-box4::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.social-network-box1::before {
+  background-image: url("../img/whatsapp.svg");
+}
+.social-network-box2::before {
+  background-image: url("../img/telegram.svg");
+}
+.social-network-box3::before {
+  background-image: url("../img/instagram.svg");
+}
+.social-network-box4::before {
+  background-image: url("../img/tiktok.svg");
+}
+.social-network-block {
+  gap: 14px;
+  margin-top: 30px;
+}
+.footer-order2 {
+  margin-left: 82px;
+}
+.footer-order3 {
+  margin-left: 109px;
+}
+.made-with {
+  height: 50px;
+  border-top: 1px solid #d8d8d8;
 }
