@@ -134,3 +134,25 @@
   margin-top: 36px;
   text-decoration: underline !important;
 }
+.technical-support {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 1.1;
+}
+.address-box p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 0px !important;
+}
+.contact-social-text {
+  color: var(--white);
+}
+.text-contact {
+  size: 14px;
+  color: var(--white);
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 0px !important;
+}

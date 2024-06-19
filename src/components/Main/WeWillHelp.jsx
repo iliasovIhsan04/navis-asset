@@ -14,17 +14,17 @@ const WeWillHelp = () => {
           <span className="text-span">{t("weHelpTextOne")}</span>
         </div>
         <div className="we-will-help-box">
-          <div className="interior-box-icons2"></div>
+          <div className="interior-box-icons2 will-icons-backg"></div>
           <h3 className="title-h3">{t("weHelpTitleTwo")}</h3>
           <span className="text-span">{t("weHelpTextTwo")}</span>
         </div>
         <div className="we-will-help-box">
-          <div className="interior-box-icons3"></div>
+          <div className="interior-box-icons3 will-icons-backg"></div>
           <h3 className="title-h3">{t("weHelpTitleThree")}</h3>
           <span className="text-span">{t("weHelpTextThree")}</span>
         </div>
-        <div className="we-will-help-box">
-          <div className="interior-box-icons4"></div>
+        <div className="we-will-help-box ">
+          <div className="interior-box-icons4 will-icons-backg"></div>
           <h3 className="title-h3">
             {t("weHelpTitleFour")} <br /> {t("scammers")}
           </h3>

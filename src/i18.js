@@ -81,8 +81,16 @@ i18n
           checkTitle3: "Опциональная консультация в Zoom",
           checkTitle4: "Профессиоанальная команда",
           checkTitle5: "Индивидуальная разработка",
-          reviewsFrom: "Отзывы довольных клиентов", 
-          
+          reviewsFrom: "Отзывы довольных клиентов",
+
+          technical: "Техническая поддержка, сотрудничество и PR",
+          address: "Кыргызская республика, г.Бишкек, Проспект Манаса 64/1",
+          socialText: "Мы в соцсетях",
+          contactText:
+            "Если у Вас возникли вопросы технического или финансового плана, напишите нам и мы поможем Вам в решении вашего вопроса. Мы отвечаем на вопросы в течение 15-60 минут, в зависимости от загрузки сервиса.",
+          checkboxText:
+            "Нажимая на кнопку «Отправить заявку», я принимаю условия ",
+          userAgreement: "Пользовательского соглашения",
         },
       },
       en: {
@@ -156,7 +164,15 @@ i18n
           checkTitle3: "Optional consultation via Zoom",
           checkTitle4: "Professional team",
           checkTitle5: "Individual development",
-          reviewsFrom: "Reviews from satisfied clients", 
+          reviewsFrom: "Reviews from satisfied clients",
+          technical: "Technical support, cooperation and PR",
+          address: "Kyrgyz Republic, Bishkek, Manas Avenue 64/1",
+          socialText: "We are in social networks",
+          contactText:
+            "If you have any technical or financial questions, write to us and we will help you resolve your issue. We answer questions within 15-60 minutes, depending on the service load.",
+          checkboxText:
+            "By clicking on the “Submit Application” button, I accept the terms and conditions",
+          userAgreement: "User agreement",
         },
       },
     },

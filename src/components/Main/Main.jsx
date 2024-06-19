@@ -15,8 +15,8 @@ const Main = () => {
       <Partners />
       <WhyСhooseTeam />
       <WeWillHelp />
-      {/* <Faq /> */}
-      {/* <News /> */}
+      <Faq />
+      <News />
       <ReturnTheMoney />
       <Footer />
     </main>

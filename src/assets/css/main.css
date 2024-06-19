@@ -112,13 +112,13 @@
   color: #000000;
 }
 .customer-card-last h2 {
-  color: #000000 !important;
+  color: var(--black) !important;
 }
 .garants {
   margin: 150px 0;
 }
 
-.garant{
+.garant {
   grid-template-columns: 2fr 3fr;
   gap: 23px;
 }
@@ -128,57 +128,56 @@
   font-weight: 600;
   line-height: 1.1;
 }
-.subtitle3{
+.subtitle3 {
   font-size: 16px;
   margin-bottom: 0 !important;
 }
-.l{
+.l {
   text-align: left;
 }
-.garants p{
+.garants p {
   padding: 0;
   background: none;
   height: 200px;
-  color: #6F6F6F;
+  color: #6f6f6f;
   margin-left: auto;
 }
-.white{
+.white {
   color: var(--white);
 }
-.price-card{
+.price-card {
   height: 563px;
   padding: 30px;
   border-radius: 30px;
 }
-.price-card:first-child{
+.price-card:first-child {
   display: grid;
   gap: 20px;
 }
-.price-card:last-child{
+.price-card:last-child {
   display: grid;
   gap: 32px;
 }
-.checks{
+.checks {
   grid-gap: 20px;
 }
-.reviews{
+.reviews {
   margin: 40px 0;
 }
-.reviews h1{
+.reviews h1 {
   margin-bottom: 40px !important;
 }
-.review{
+.review {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
-.review-card{
+.review-card {
   padding: 20px;
   background-color: var(--grey);
   border-radius: 12px;
   gap: 15px;
 }
-
-.user{
+.user {
   width: 40px;
   height: 40px;
   background: var(--white);

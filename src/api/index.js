@@ -2,7 +2,7 @@ import axios from "axios";
 
 const lang = localStorage.getItem("lang");
 export const instance = axios.create({
-  baseURL: "http://192.168.1.221:8000",
+  baseURL: "https://navisteamsenglish.pythonanywhere.com/",
 });
 
 export const Main = {

@@ -107,8 +107,7 @@
   flex-direction: column;
   gap: 20px;
 }
-
-.we-will-help-box div {
+.will-icons-backg {
   background: rgb(240, 221, 213) !important;
 }
 .we-will-help-box:first-child {
@@ -254,7 +253,11 @@
 .social-network-box1,
 .social-network-box2,
 .social-network-box3,
-.social-network-box4 {
+.social-network-box4,
+.contact-social-box1,
+.contact-social-box2,
+.contact-social-box3,
+.contact-social-box4 {
   width: 40px;
   height: 40px;
   position: relative;
@@ -276,6 +279,28 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+.contact-social-block {
+  margin: 20px 0 0 0;
+  gap: 14px;
+}
+.contact-social-box1,
+.contact-social-box2,
+.contact-social-box3,
+.contact-social-box4 {
+  background: var(--white) !important;
+}
+.contact-social-box1::before {
+  background-image: url("../img/whatsapRed.svg") !important;
+}
+.contact-social-box2::before {
+  background-image: url("../img/telegramRed.svg") !important;
+}
+.contact-social-box3::before {
+  background-image: url("../img/ins.svg") !important;
+}
+.contact-social-box4::before {
+  background-image: url("../img/tiktokRed.svg") !important;
 }
 .social-network-box1::before {
   background-image: url("../img/whatsapp.svg");
@@ -302,4 +327,23 @@
 .made-with {
   height: 50px;
   border-top: 1px solid #d8d8d8;
+}
+.address-box {
+  gap: 16px;
+}
+.contacts-card {
+  min-height: 665px;
+  gap: 0px !important;
+}
+.contacts-card:first-child {
+  background: var(--red);
+}
+.contact {
+  margin-bottom: 100px;
+}
+.contact-inter-box {
+  gap: 60px;
+}
+.address-call-block {
+  gap: 30px;
 }
