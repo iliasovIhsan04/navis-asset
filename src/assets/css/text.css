@@ -92,3 +92,9 @@
 .oval2 {
   font-size: 14px;
 }
+.news-description {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--black);
+}

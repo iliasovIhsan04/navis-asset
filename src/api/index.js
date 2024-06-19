@@ -9,8 +9,8 @@ export const Main = {
   getFaq: () => {
     return instance
       .get(`/api/question/${lang}/`)
-      .then((respopnse) => {
-        return respopnse.data;
+      .then((response) => {
+        return response.data;
       })
       .catch((error) => {
         throw error;

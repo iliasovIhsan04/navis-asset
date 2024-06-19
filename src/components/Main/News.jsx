@@ -3,34 +3,45 @@ import { Main } from "../../api";
 
 const News = () => {
   const [news, setNews] = useState([]);
+  const lang = localStorage.getItem("lang");
   useEffect(() => {
     const fetchData = async () => {
       const res = await Main.getNews();
-      setNews(res);
-    //   console.log(res);
+      if (lang === "ru") {
+        setNews(res.ru);
+      } else {
+        setNews(res.en);
+      }
     };
     fetchData();
   }, []);
-
-  console.log(news);
-
   return (
     <div className="container">
       <div className="news wallet-recovery">
-        {/* <div className="news-box"> </div> */}
+        {news.slice(0, 1).map((item, index) => (
+          <div className="news-box news-inter-box" key={index}>
+            <img className="news-img-block" src={item.image} alt={item.title} />
+            <div className="gap-page d-flex justify-content-between align-items-end ">
+              <div className="d-flex flex-column title-inter-block">
+                <h4 className="news-description"> {item.title} </h4>
+                <span className="text-span">{item.created_at}</span>
+              </div>
+              <div className="news-icons"></div>
+            </div>
+          </div>
+        ))}
         <div className="news-box">
-          {news?.map((index, item) => (
-            <div key={index}>
-              <div>
-                <h1>{item.description}</h1>
-                <p>{item.description}</p>
-                {item?.comments?.map((index, comment) => (
-                  <div key={index}>
-                    <h2>{comment.author}</h2>
-                    <p>{comment.created_at}</p>
-                    <p>{comment.content}</p>
-                  </div>
-                ))}
+          {news.map((item, index) => (
+            <div className="news-box2 " key={index}>
+              <div className="news-boxs2-img">
+                <img src={item.image} alt="" />
+              </div>
+              <div className="griting">
+                <div className="d-flex flex-column justify-content-between">
+                  <h4 className="news-description">{item.title}</h4>
+                  <span>{item.created_at}</span>
+                </div>
+                <div className="news-icons  d-flex justify-content-between align-items-end"></div>
               </div>
             </div>
           ))}
