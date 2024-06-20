@@ -120,7 +120,10 @@
 .interior-box-icons1,
 .interior-box-icons2,
 .interior-box-icons3,
-.interior-box-icons4 {
+.interior-box-icons4,
+.application-icons-box1,
+.application-icons-box2,
+.application-icons-box3 {
   position: relative;
   width: 60px;
   height: 60px;
@@ -129,7 +132,10 @@
 .interior-box-icons1::before,
 .interior-box-icons2::before,
 .interior-box-icons3::before,
-.interior-box-icons4::before {
+.interior-box-icons4::before,
+.application-icons-box1::before,
+.application-icons-box2::before,
+.application-icons-box3::before {
   position: absolute;
   content: "";
   width: 30px;
@@ -142,7 +148,13 @@
   background-position: center;
   background-size: contain;
 }
-.interior-box-icons2::before {
+.application-icons-box1::before {
+  background-image: url("../img/wallet.svg") !important;
+}
+.application-icons-box2::before {
+  background-image: url("../img/shield.svg");
+}
+.application-icons-box3 .interior-box-icons2::before {
   background-image: url("../img/commentt.svg") !important;
 }
 .interior-box-icons3::before {
@@ -165,6 +177,7 @@
 }
 .news-box {
   min-height: 510px;
+  gap: 20px;
 }
 .news-inter-box {
   display: grid;
@@ -179,14 +192,33 @@
   object-position: center;
 }
 .news-icons {
+  position: relative;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: rgb(240, 221, 213) !important;
+  cursor: pointer;
+}
+.news-icons::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .title-inter-block,
 .news-box2 {
   gap: 20px;
+}
+.gap-page {
+  display: grid;
+  grid-template-columns: 0.8fr 0.2fr;
 }
 .gap-page {
   gap: 50px;
@@ -209,13 +241,13 @@
 .news-box2-img img {
   object-fit: cover;
   object-position: center;
-  width: 105px !important;
-  height: 105px !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 .news-text-box {
   margin-left: 20px;
 }
-.gridddddddd {
+.news-icons-block-inter {
   display: flex;
   justify-content: flex-end;
 }
@@ -331,14 +363,19 @@
 .address-box {
   gap: 16px;
 }
-.contacts-card {
+.contacts-card,
+.application-card {
   min-height: 665px;
   gap: 0px !important;
+}
+.application-card:first-child {
+  background: transparent !important;
 }
 .contacts-card:first-child {
   background: var(--red);
 }
-.contact {
+.contact,
+.application {
   margin-bottom: 100px;
 }
 .contact-inter-box {
@@ -346,4 +383,16 @@
 }
 .address-call-block {
   gap: 30px;
+}
+.application-box {
+  display: grid;
+  grid-template-columns: 0.1fr 0.9fr;
+  gap: 20px;
+  padding: 30px 0 30px 0;
+}
+.aplication-text-box {
+  gap: 20px;
+}
+.griting {
+  width: 800px !important;
 }

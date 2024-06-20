@@ -1,6 +1,5 @@
 import { t } from "i18next";
 import React from "react";
-import { GoMail } from "react-icons/go";
 import { MdOutlineCall } from "react-icons/md";
 import { PiMapPin } from "react-icons/pi";
 import { VscMail } from "react-icons/vsc";

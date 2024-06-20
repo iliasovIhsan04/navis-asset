@@ -1,8 +1,10 @@
 import { t } from "i18next";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import { useNavigate } from "react-router";
 
 const WalletRecovery = () => {
+  const navigate = useNavigate();
   return (
     <div className="container">
       <div className="wallet-recovery">
@@ -14,7 +16,10 @@ const WalletRecovery = () => {
           </h1>
           <span className="text-span"> {t("easiest")} </span>
           <div className="d-flex" style={{ gap: "10px" }}>
-            <button className="submit-application-btn">
+            <button
+              className="submit-application-btn"
+              onClick={() => navigate("/application")}
+            >
               {t("submitYourApplication")}
             </button>
             <button className="more-details-btn d-flex aling-items-center">

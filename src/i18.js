@@ -91,6 +91,15 @@ i18n
           checkboxText:
             "Нажимая на кнопку «Отправить заявку», я принимаю условия ",
           userAgreement: "Пользовательского соглашения",
+          trustedWallet: "Доверенное восстановление кошелька",
+          trustedName:
+            "Самое надежное имя в восстановлении цифровых активов с 2017 года.",
+          secureStorage: "Безопасное недоступное хранилище",
+          informationAbout:
+            "Вся информация о кошельках и паролях зашифрована и хранится на оффлайн-серверах с воздушным зазором.",
+          getStarted: "Начните совершенно бесплатно",
+          getStartedText:
+            "Гарантия без риска - вы нам не заплатите ни копейки, если мы не сможем восстановить ваш пароль.",
         },
       },
       en: {
@@ -173,6 +182,15 @@ i18n
           checkboxText:
             "By clicking on the “Submit Application” button, I accept the terms and conditions",
           userAgreement: "User agreement",
+          trustedWallet: "Trusted wallet recovery",
+          trustedName:
+            "The most trusted name in digital asset recovery since 2017.",
+          secureStorage: "Secure Inaccessible Storage",
+          informationAbout:
+            "All information about wallets and passwords is encrypted and stored on offline servers with an air gap.",
+          getStarted: "Get started completely free",
+          getStartedText:
+            "Risk-free guarantee - you won't pay us a penny if we can't recover your password.",
         },
       },
     },

@@ -156,3 +156,7 @@
   line-height: 1;
   margin-bottom: 0px !important;
 }
+.news-text-item {
+  max-width: 300px;
+  margin-left: 20px;
+}
