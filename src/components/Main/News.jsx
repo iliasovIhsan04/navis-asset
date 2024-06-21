@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Main } from "../../api";
-import { FiArrowUpRight } from "react-icons/fi";
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -44,7 +43,7 @@ const News = () => {
           </>
         ))}
         <div className="news-box d-flex flex-column">
-          {news.map((item, index) => (
+          {news.slice(0, 4).map((item, index) => (
             <div className="news-box2 d-flex" key={index}>
               <div className="griting d-flex">
                 <div className="news-box2-img">

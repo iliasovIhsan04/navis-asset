@@ -17,6 +17,7 @@ export default function Faq() {
     };
     fetchData();
   }, []);
+
   return (
     <div className="container">
       <div id="faq" className="top-page">

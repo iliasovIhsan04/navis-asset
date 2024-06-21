@@ -4,6 +4,7 @@
   --black: #000000;
   --gray: #6f6f6f;
   --white-gray: #f5f7fa;
+  --valuta: #8c8c8c;
   --background-icons: linear-gradient(
     59.33deg,
     rgba(212, 21, 28, 0.15) 22.38%,
@@ -59,7 +60,8 @@ a:focus {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
   margin-bottom: 0px !important;
 }
 .input-block {

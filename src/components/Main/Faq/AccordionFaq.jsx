@@ -12,13 +12,13 @@ export default function AccordionFaq({
   return (
     <div className={`wrapper `}>
       <button className={`question-container`} onClick={onClick}>
-        <h3 className="question-content title-h3">{question}</h3>
+        <h3 className="question-content">{question}</h3>
 
         <div className="question-box d-flex align-items-center justify-content-center">
           {isOpen ? (
-            <FaMinus className="arrow" size={24} />
+            <FaMinus className="arrow" size={20} />
           ) : (
-            <FaPlus className="arrow" size={24} />
+            <FaPlus className="arrow" size={20} />
           )}
         </div>
       </button>
@@ -26,7 +26,7 @@ export default function AccordionFaq({
         ref={contentRef}
         className="answer-container"
         style={{
-          maxHeight: isOpen ? contentRef.current.scrollHeight + "px" : "0px",
+          maxHeight: isOpen ? "1000px" : "0px",
         }}
       >
         <p className="answer-description">{answer}</p>
