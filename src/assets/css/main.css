@@ -23,16 +23,18 @@
   border: none;
   cursor: pointer;
   padding: 1px 0 !important;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1.7fr 0.3fr;
 }
 .question-box {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: linear-gradient(
-    59.33deg,
-    rgba(212, 21, 28, 0.15) 22.38%,
-    rgba(211, 84, 0, 0.15) 87.43%
-  );
+  background: var(--background-icons);
+  margin-left: auto !important;
 }
 .arrow {
   color: #d4151c;

@@ -45,7 +45,6 @@ const Application = () => {
                   <input placeholder="Фамилия" type="text" />
                 </div>
               </div>
-              ihsan
               <div className="input-box d-flex flex-column g-10">
                 <label htmlFor="">Страна</label>
                 <select className="input-select" name="" id=""></select>

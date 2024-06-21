@@ -4,6 +4,11 @@
   --black: #000000;
   --gray: #6f6f6f;
   --white-gray: #f5f7fa;
+  --background-icons: linear-gradient(
+    59.33deg,
+    rgba(212, 21, 28, 0.15) 22.38%,
+    rgba(211, 84, 0, 0.15) 87.43%
+  );
 }
 button {
   padding: 10px 20px !important;
