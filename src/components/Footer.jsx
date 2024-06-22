@@ -21,8 +21,12 @@ const Footer = () => {
             <div className="d-flex flex-column">
               <h2 className="title-internal-footer">Основное</h2>
               <div className="link-footer-block d-flex flex-column">
-                <NavLink className="link-footer">О нас</NavLink>
-                <NavLink className="link-footer">Контакты</NavLink>
+                <NavLink to="/about-us" className="link-footer">
+                  О нас
+                </NavLink>
+                <NavLink to="/contacts" className="link-footer">
+                  Контакты
+                </NavLink>
                 <NavLink className="link-footer">Партнеры</NavLink>
                 <NavLink className="link-footer">Почему NavisAsset?</NavLink>
               </div>
@@ -31,9 +35,15 @@ const Footer = () => {
               <h2 className="title-internal-footer">Пользователям</h2>
               <div className="link-footer-block d-flex flex-column">
                 <NavLink className="link-footer">Услуги</NavLink>
-                <NavLink className="link-footer">Отзывы</NavLink>
-                <NavLink className="link-footer">Прайс</NavLink>
-                <NavLink className="link-footer">Новости</NavLink>
+                <NavLink to="/reviews" className="link-footer">
+                  Отзывы
+                </NavLink>
+                <NavLink to="/price" className="link-footer">
+                  Прайс
+                </NavLink>
+                <NavLink to="/all-news" className="link-footer">
+                  Новости
+                </NavLink>
               </div>
             </div>
             <div className="d-flex flex-column footer-order3">

@@ -44,18 +44,20 @@ const NewsDetails = () => {
           <div className="news-box d-flex flex-column">
             <h3 className="question-content">{t("readAlso")}</h3>
             {newsDetails?.similar_news?.map((item, index) => (
-              <div className="news-box2 d-flex " key={index}>
-                <div className="news-box2-img">
-                  <img src={item.img} alt="" />
-                </div>
-                <div className="d-flex flex-column justify-content-between news-box-inter">
-                  <h4 className="news-description">{item.title}</h4>
-                  <div className="news-icons-block-inter d-flex align-items-end justify-content-between">
-                    <span className="text-span">{item.created_at}</span>
-                    <div className="news-icons"></div>
+              <NavLink to={`/news-details/${item.slug}`}>
+                <div className="news-box2 d-flex " key={index}>
+                  <div className="news-box2-img">
+                    <img src={item.img} alt="" />
+                  </div>
+                  <div className="d-flex flex-column justify-content-between news-box-inter">
+                    <h4 className="news-description">{item.title}</h4>
+                    <div className="news-icons-block-inter d-flex align-items-end justify-content-between">
+                      <span className="text-span">{item.created_at}</span>
+                      <div className="news-icons"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </NavLink>
             ))}
           </div>
         </div>

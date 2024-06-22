@@ -26,7 +26,10 @@ const News = () => {
           <>
             {item.is_display === true ? (
               <NavLink to={`/news-details/${item.slug}`}>
-                <div className="news-box news-inter-box" key={index}>
+                <div
+                  className="news-box news-inter-box d-flex flex-column justify-content-between"
+                  key={index}
+                >
                   <img
                     className="news-img-block"
                     src={item.img}
@@ -34,7 +37,7 @@ const News = () => {
                   />
                   <div className="gap-page  align-items-end ">
                     <div className="d-flex flex-column title-inter-block">
-                      <h4 className="news-description"> {item.title} </h4>
+                      <h4 className="news-description news-description-text1"> {item.title} </h4>
                       <span className="text-span">{item.created_at}</span>
                     </div>
                     <div className="news-icons-block-inter">

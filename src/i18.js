@@ -33,6 +33,7 @@ i18n
             "Гарантируем, что резервная копия зашифрованного кошелька будет хнариться в сервере",
           chooseText3:
             "Наша панель пользователя позволяет вам загружать данные в любое время",
+          wiHelpYou: "Мы поможем вам, если",
           weHelpTitleOne: "Если ваш пароль не ",
           works: "работает",
           weHelpTextOne:
@@ -128,6 +129,7 @@ i18n
           chooseText2:
             "We guarantee that a backup copy of the encrypted wallet will be stored on the server",
           chooseText3: "Our user panel allows you to download data at any time",
+          wiHelpYou: "We will help you if",
           weHelpTitleOne: "If your password is not",
           weHelpTextOne:
             "You thought you knew your password, but now it won't unlock your wallet. Maybe it uses different numbers or a different capital letter than you remember.",

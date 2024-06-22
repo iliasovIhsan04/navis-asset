@@ -260,6 +260,7 @@
   width: 100%;
   min-height: 360px;
   padding-top: 46px;
+  background: var(--white-gray);
 }
 .footer-box2 {
   padding-top: 15px;
@@ -450,4 +451,7 @@
 .news-details-grid,
 .news-details-grid-box1 {
   gap: 20px;
+}
+.link-footer:hover {
+  color: var(--red);
 }
