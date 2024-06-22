@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import user from "../../assets/img/user.svg";
 import { Pages } from "../../api";
+import { BsStarFill } from "react-icons/bs";
 
 export default function SeeReview() {
   const [review, setReviews] = useState([]);
@@ -20,7 +21,14 @@ export default function SeeReview() {
           key={index}
         >
           <div className="review-star-block d-grid">
-            <div>{item.star}</div>
+            <div className="d-flex start-block">
+              {item &&
+                Array.from({ length: item.star }, (_, starIndex) => (
+                  <span key={starIndex} className="star">
+                    <BsStarFill size={20} className="fistart" />
+                  </span>
+                ))}
+            </div>
             <p className="subtitle1 news-description"> «{item.review}» </p>
           </div>
           <div className="d-flex g-10">

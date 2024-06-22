@@ -6,6 +6,8 @@ import Price from "./pages/Price";
 import Reviews from "./pages/Reviews";
 import Contacts from "./pages/Contacts";
 import Application from "./pages/Application";
+import AllNews from "./pages/AllNews";
+import NewsDetails from "./pages/NewsDetails";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/application" element={<Application />} />
+        <Route path="/all-news" element={<AllNews />} />
+        <Route path="/news-details/:slug" element={<NewsDetails />} />
       </Routes>
     </div>
   );

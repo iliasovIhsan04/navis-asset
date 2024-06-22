@@ -85,6 +85,12 @@
   font-weight: 500;
   line-height: 1.1;
   color: var(--black);
+  max-width: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 .title-internal-footer {
   font-size: 20px;
@@ -162,4 +168,7 @@
   font-weight: 600;
   color: var(--black);
   line-height: 1.1;
+}
+.news-details-description {
+  color: var(--lightBlack);
 }

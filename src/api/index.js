@@ -1,3 +1,4 @@
+// api.js
 import axios from "axios";
 
 const lang = localStorage.getItem("lang");
@@ -19,6 +20,16 @@ export const Main = {
   getNews: () => {
     return instance
       .get(`/api/news/${lang}/`)
+      .then((response) => {
+        return response.data;
+      })
+      .catch((error) => {
+        throw error;
+      });
+  },
+  getNewsDetails: (lang, slug) => {
+    return instance
+      .get(`/api/news/${lang}/${slug}/`)
       .then((response) => {
         return response.data;
       })

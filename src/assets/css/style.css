@@ -5,6 +5,7 @@
   --gray: #6f6f6f;
   --white-gray: #f5f7fa;
   --valuta: #8c8c8c;
+  --lightBlack: #313131;
   --background-icons: linear-gradient(
     59.33deg,
     rgba(212, 21, 28, 0.15) 22.38%,
@@ -53,9 +54,16 @@ a:focus {
   background: var(--white);
   border: none;
 }
-.more-details-btn {
+.more-details-btn,
+.more-news-btn {
   gap: 10px;
   align-items: center;
+  border: 2px solid #d8d8d8;
+  background: transparent;
+}
+.more-news-btn {
+  border: 2px solid var(--black);
+  margin: 60px auto;
 }
 h1,
 h2,
@@ -141,4 +149,10 @@ label {
   border: none;
   background: var(--red);
   color: var(--white);
+}
+.fistart {
+  color: #ffcb3c;
+}
+.start-block {
+  gap: 6px;
 }

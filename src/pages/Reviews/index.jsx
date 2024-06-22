@@ -6,7 +6,7 @@ export default function Reviews() {
   return (
     <div className="container">
       <div className="reviews">
-        <h1 className="title-page"> {t("reviewsFrom")} </h1>
+        <h2 className="title-page"> {t("reviewsFrom")} </h2>
         <SeeReview />
       </div>
     </div>

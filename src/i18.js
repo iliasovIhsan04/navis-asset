@@ -100,6 +100,9 @@ i18n
           getStarted: "Начните совершенно бесплатно",
           getStartedText:
             "Гарантия без риска - вы нам не заплатите ни копейки, если мы не сможем восстановить ваш пароль.",
+          news: "Новости",
+          newsBtn: "Подробнее",
+          readAlso: "Читать также:",
         },
       },
       en: {
@@ -191,6 +194,9 @@ i18n
           getStarted: "Get started completely free",
           getStartedText:
             "Risk-free guarantee - you won't pay us a penny if we can't recover your password.",
+          news: "News",
+          newsBtn: "More details",
+          readAlso: "Read also:",
         },
       },
     },
