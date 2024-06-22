@@ -144,8 +144,9 @@
 .contact-social-text {
   color: var(--white);
 }
-.text-contact {
-  size: 14px;
+.text-contact,
+.price-wallet-text {
+  font-size: 14px;
   color: var(--white);
   font-weight: 400;
   line-height: 1;
@@ -174,4 +175,7 @@
 }
 .news-details-description {
   color: var(--lightBlack);
+}
+.price-title {
+  text-align: center;
 }

@@ -96,10 +96,10 @@
 }
 .customer-card:nth-child(2) {
   color: #ffffff;
-  background: linear-gradient(59.33deg, #d4151c 22.38%, #d35400 87.43%);
+  background: var(--red);
 }
 .customer-card-last {
-  background: #f5f7fa !important;
+  background: var(--white-gray) !important;
   color: #000000;
   padding: 27px 20px;
 }
@@ -124,7 +124,7 @@
   color: var(--white);
 }
 .price-card {
-  height: 563px;
+  min-height: 563px;
   padding: 30px;
   border-radius: 30px;
 }
@@ -134,7 +134,7 @@
 }
 .price-card:last-child {
   display: grid;
-  gap: 32px;
+  gap: 42px;
 }
 .checks {
   grid-gap: 20px;

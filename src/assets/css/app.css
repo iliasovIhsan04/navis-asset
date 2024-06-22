@@ -159,7 +159,10 @@
 .application-icons-box2::before {
   background-image: url("../img/shield.svg");
 }
-.application-icons-box3 .interior-box-icons2::before {
+.application-icons-box3 {
+  background-image: url("../img/commentt.svg") !important;
+}
+.interior-box-icons2::before {
   background-image: url("../img/commentt.svg") !important;
 }
 .interior-box-icons3::before {
@@ -454,4 +457,10 @@
 }
 .link-footer:hover {
   color: var(--red);
+}
+.check-card-img {
+  width: 30px;
+  height: 30px;
+  background: var(--white);
+  border-radius: 50%;
 }
