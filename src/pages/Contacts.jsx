@@ -9,7 +9,7 @@ export default function Contacts() {
     <div className="contact">
       <div className="container">
         <div className="wallet-recovery">
-          <div className=" contacts-card we-will-help-box d-flex flex-column justify-content-between">
+          <div className=" contacts-card  d-flex flex-column justify-content-between white-backg">
             <div className="contact-inter-box d-grid">
               <h2 className="technical-support">{t("technical")}</h2>
               <div className="address-call-block d-grid">

@@ -103,7 +103,8 @@
 .we-will-help {
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr)) !important;
 }
-.we-will-help-box {
+.we-will-help-box,
+.white-backg {
   min-height: 275px;
   padding: 30px;
   border-radius: 20px;
@@ -118,14 +119,10 @@
 .we-will-help-box:first-child {
   background: var(--red);
 }
-
-.we-will-help-box-first div {
-  background: var(--white) !important;
+.we-will-help-box:first-child div {
+  background: var(--white);
 }
-.interior-box-icons1,
-.interior-box-icons2,
-.interior-box-icons3,
-.interior-box-icons4,
+.interior-box-icons,
 .application-icons-box1,
 .application-icons-box2,
 .application-icons-box3 {
@@ -134,10 +131,6 @@
   height: 60px;
   border-radius: 50%;
 }
-.interior-box-icons1::before,
-.interior-box-icons2::before,
-.interior-box-icons3::before,
-.interior-box-icons4::before,
 .application-icons-box1::before,
 .application-icons-box2::before,
 .application-icons-box3::before {
@@ -161,15 +154,6 @@
 }
 .application-icons-box3 {
   background-image: url("../img/commentt.svg") !important;
-}
-.interior-box-icons2::before {
-  background-image: url("../img/commentt.svg") !important;
-}
-.interior-box-icons3::before {
-  background-image: url("../img/close.svg") !important;
-}
-.interior-box-icons4::before {
-  background-image: url("../img//shield.svg") !important;
 }
 .money-btn_block span {
   max-width: 246px;

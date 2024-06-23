@@ -37,7 +37,9 @@ const News = () => {
                   />
                   <div className="gap-page  align-items-end ">
                     <div className="d-flex flex-column title-inter-block">
-                      <h4 className="news-description news-description-text1"> {item.title} </h4>
+                      <h4 className="news-description news-description-text1">
+                        {item.title}
+                      </h4>
                       <span className="text-span">{item.created_at}</span>
                     </div>
                     <div className="news-icons-block-inter">
@@ -52,7 +54,7 @@ const News = () => {
           </>
         ))}
         <div className="news-box d-flex flex-column">
-          {news.slice(0, 4).map((item, index) => (
+          {news?.slice(0, 4)?.map((item, index) => (
             <>
               <NavLink to={`/news-details/${item.slug}`}>
                 <div className="news-box2 d-flex " key={index}>

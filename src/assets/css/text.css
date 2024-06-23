@@ -179,3 +179,7 @@
 .price-title {
   text-align: center;
 }
+.we-will-help-box:first-child h3,
+.we-will-help-box:first-child span {
+  color: var(--white) !important;
+}

@@ -129,7 +129,8 @@
   border-radius: 30px;
 }
 .price-card:first-child {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 .price-card:last-child {
