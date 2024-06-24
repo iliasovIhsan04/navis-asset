@@ -52,4 +52,12 @@ export const Pages = {
       .then((response) => response)
       .catch((error) => error);
   },
+  getContact: () => {
+    return instance
+      .get(`/list/info/${lang}/`)
+      .then((response) => response)
+      .catch((error) => {
+        throw error;
+      });
+  },
 };

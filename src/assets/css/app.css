@@ -74,37 +74,15 @@
   padding: 30px;
   height: 400px;
 }
-.team-contitions-img1,
-.team-contitions-img2,
-.team-contitions-img3 {
-  position: relative;
+.team-contitions-img {
   width: 262px;
   height: 100px;
-}
-.team-contitions-img1::before,
-.team-contitions-img2::before,
-.team-contitions-img3::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url("../img/number1.svg");
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
-.team-contitions-img2::before {
-  background-image: url("../img/number2.svg") !important;
-}
-.team-contitions-img3::before {
-  background-image: url("../img/number3.svg") !important;
 }
 .we-will-help {
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr)) !important;
 }
 .we-will-help-box,
-.white-backg {
+.white-backg-contact {
   min-height: 275px;
   padding: 30px;
   border-radius: 20px;
@@ -116,7 +94,8 @@
 .will-icons-backg {
   background: var(--background-icons);
 }
-.we-will-help-box:first-child {
+.we-will-help-box:first-child,
+.white-backg-contact:nth-child(1) {
   background: var(--red);
 }
 .we-will-help-box:first-child div {
@@ -157,7 +136,7 @@
 }
 .money-btn_block span {
   max-width: 246px;
-  color: #f5f7fa;
+  color: var(--white-gray);
   text-align: end;
 }
 .money-btn_block button {
@@ -211,8 +190,6 @@
 .gap-page {
   display: grid;
   grid-template-columns: 0.8fr 0.2fr;
-}
-.gap-page {
   gap: 50px;
 }
 .news-box2 {

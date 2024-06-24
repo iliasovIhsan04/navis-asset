@@ -1,15 +1,37 @@
 import { t } from "i18next";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { MdOutlineCall } from "react-icons/md";
 import { PiMapPin } from "react-icons/pi";
 import { VscMail } from "react-icons/vsc";
+import { Pages } from "../api";
+import Selects from "../assets/UI/Select/Select";
 
 export default function Contacts() {
+  const [contact, setContact] = useState([]);
+  const lang = localStorage.getItem("lang");
+  const [inputChanged, setInputChanged] = useState(false);
+  const [info, setInfo] = useState({
+    country: "",
+    wallet_type: "",
+    recovery: "",
+  });
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await Pages.getContact();
+      if (lang === "ru") {
+        setContact(res);
+      } else {
+        setContact(res);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <div className="contact">
       <div className="container">
         <div className="wallet-recovery">
-          <div className=" contacts-card  d-flex flex-column justify-content-between white-backg">
+          <div className=" contacts-card  d-flex flex-column justify-content-between white-backg-contact">
             <div className="contact-inter-box d-grid">
               <h2 className="technical-support">{t("technical")}</h2>
               <div className="address-call-block d-grid">
@@ -75,7 +97,22 @@ export default function Contacts() {
               </div>
               <div className="input-box d-flex flex-column g-10">
                 <label htmlFor="">Тип восстановления</label>
-                <select className="input-select" name="" id=""></select>
+                <select
+                  className="input-select"
+                  name=""
+                  id=""
+                  onChange={(e) =>
+                    setInfo({
+                      ...info,
+                      country: e.target.value,
+                    }) || setInputChanged(true)
+                  }
+                  value={info.country}
+                >
+                  {contact?.country?.map((el, id) => (
+                    <option key={id} value={el.country}></option>
+                  ))}
+                </select>
               </div>
               <div className="input-block g-10">
                 <div className="input-box d-flex flex-column g-10">
