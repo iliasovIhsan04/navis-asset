@@ -4,7 +4,6 @@ import { MdOutlineCall } from "react-icons/md";
 import { PiMapPin } from "react-icons/pi";
 import { VscMail } from "react-icons/vsc";
 import { Pages } from "../api";
-import Selects from "../assets/UI/Select/Select";
 
 export default function Contacts() {
   const [contact, setContact] = useState([]);
@@ -14,24 +13,40 @@ export default function Contacts() {
     country: "",
     wallet_type: "",
     recovery: "",
+    first_name: "",
+    last_name: "",
+    email: "",
+    phone: "",
+    wallet_value: 0,
+    status_agree: true,
   });
+
+  const post = [{
+    
+  }]
+
   useEffect(() => {
     const fetchData = async () => {
       const res = await Pages.getContact();
-      if (lang === "ru") {
-        setContact(res);
-      } else {
-        setContact(res);
-      }
+      setContact(res.data);
     };
     fetchData();
-  }, []);
+  }, [lang]);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setInfo((prevInfo) => ({
+      ...prevInfo,
+      [name]: value,
+    }));
+    setInputChanged(true);
+  };
 
   return (
     <div className="contact">
       <div className="container">
         <div className="wallet-recovery">
-          <div className=" contacts-card  d-flex flex-column justify-content-between white-backg-contact">
+          <div className="contacts-card d-flex flex-column justify-content-between white-backg-contact">
             <div className="contact-inter-box d-grid">
               <h2 className="technical-support">{t("technical")}</h2>
               <div className="address-call-block d-grid">
@@ -73,55 +88,99 @@ export default function Contacts() {
             >
               <div className="input-block d-flex g-10">
                 <div className="input-box d-flex flex-column g-10">
-                  <label htmlFor="">Имя</label>
-                  <input type="text" placeholder="Имя" />
+                  <label htmlFor="firstName">Имя</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    placeholder="Имя"
+                    value={info.first_name}
+                  />
                 </div>
                 <div className="input-box d-flex flex-column g-10">
-                  <label htmlFor="">Фамилия</label>
-                  <input placeholder="Фамилия" type="text" />
+                  <label htmlFor="lastName">Фамилия</label>
+                  <input
+                    id="lastName"
+                    placeholder="Фамилия"
+                    type="text"
+                    value={info.last_name}
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
               <div className="input-box d-flex flex-column g-10">
-                <label htmlFor="">Страна</label>
-                <select className="input-select" name="" id=""></select>
+                <label htmlFor="country">Страна</label>
+                <select
+                  className="input-select"
+                  name="country"
+                  id="country"
+                  value={info.country}
+                  onChange={handleChange}
+                >
+                  {contact?.country?.map((el, id) => (
+                    <option key={id} value={el.country}>
+                      {el.country}
+                    </option>
+                  ))}
+                </select>
               </div>
               <div className="input-block d-flex g-10">
                 <div className="input-box d-flex flex-column g-10">
-                  <label htmlFor="">Почта</label>
-                  <input type="text" placeholder="Электронная почта" />
+                  <label htmlFor="email">Почта</label>
+                  <input
+                    type="text"
+                    id="email"
+                    placeholder="Электронная почта"
+                    value={info.email}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div className="input-box d-flex flex-column g-10">
-                  <label htmlFor="">+996 502 800 202</label>
-                  <input placeholder="Фамилия" type="text" />
+                  <label htmlFor="phone">Телефон</label>
+                  <input id="phone" placeholder="Телефон" type="text" />
                 </div>
               </div>
               <div className="input-box d-flex flex-column g-10">
-                <label htmlFor="">Тип восстановления</label>
+                <label htmlFor="recovery">Тип восстановления</label>
                 <select
                   className="input-select"
-                  name=""
-                  id=""
-                  onChange={(e) =>
-                    setInfo({
-                      ...info,
-                      country: e.target.value,
-                    }) || setInputChanged(true)
-                  }
-                  value={info.country}
+                  name="recovery"
+                  id="recovery"
+                  value={info.recovery}
+                  onChange={handleChange}
                 >
-                  {contact?.country?.map((el, id) => (
-                    <option key={id} value={el.country}></option>
+                  {contact.recovery?.map((el, id) => (
+                    <option key={id} value={el.recovery}>
+                      {el.recovery}
+                    </option>
                   ))}
                 </select>
               </div>
               <div className="input-block g-10">
                 <div className="input-box d-flex flex-column g-10">
-                  <label htmlFor="">Вид кошелька</label>
-                  <select className="input-select" name="" id=""></select>
+                  <label htmlFor="wallet_type">Вид кошелька</label>
+                  <select
+                    className="input-select"
+                    name="wallet_type"
+                    id="wallet_type"
+                    value={info.wallet_type}
+                    onChange={handleChange}
+                  >
+                    {contact.wallet_type?.map((el, id) => (
+                      <option key={id} value={el.wallet_type}>
+                        {el.wallet_type}
+                      </option>
+                    ))}
+                  </select>
                 </div>
                 <div className="input-box d-flex flex-column g-10">
-                  <label htmlFor="">Объем кошелька</label>
-                  <input placeholder="Объем кошелька" type="text" />
+                  <label htmlFor="wallet_volume">Объем кошелька</label>
+                  <input
+                    id="wallet_volume"
+                    placeholder="Объем кошелька"
+                    type="text"
+                    value={info.wallet_value}
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
               <label className="checkbox-container">
@@ -131,7 +190,7 @@ export default function Contacts() {
                   {t("checkboxText")} <span>{t("userAgreement")}</span>
                 </p>
               </label>
-              <button>Отправить заявку</button>
+              <button type="submit">Отправить заявку</button>
             </form>
           </div>
         </div>
