@@ -15,21 +15,17 @@ export default function AccordionFaq({
         <h3 className="question-content">{question}</h3>
 
         <div className="question-box d-flex align-items-center justify-content-center">
-          {isOpen ? (
-            <FaMinus className="arrow" size={20} />
-          ) : (
-            <FaPlus className="arrow" size={20} />
-          )}
+          <FaPlus className={isOpen ? "arrow animation" : "arrow"} size={20} />
         </div>
       </button>
       <div
         ref={contentRef}
-        className="answer-container"
+        className="answer-container "
         style={{
           maxHeight: isOpen ? "1000px" : "0px",
         }}
       >
-        <p className="answer-description">{answer}</p>
+        <p className={isOpen ? "answer-description answer-container-inner" : "answer-description answer-container-inner"}>{answer}</p>
       </div>
       <div className="border"></div>
     </div>

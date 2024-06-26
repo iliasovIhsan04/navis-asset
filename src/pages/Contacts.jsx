@@ -12,7 +12,7 @@ export default function Contacts() {
   const [info, setInfo] = useState({
     country: "",
     wallet_type: "",
-    recovery: "",
+    recovery_type: "",
     first_name: "",
     last_name: "",
     email: "",
@@ -21,9 +21,17 @@ export default function Contacts() {
     status_agree: true,
   });
 
-  const post = [{
-    
-  }]
+  const post = {
+    country: info.country,
+    wallet_type: info.wallet_type,
+    recovery_type: info.recovery_type,
+    first_name: info.first_name,
+    last_name: info.last_name,
+    email: info.email,
+    phone: info.phone,
+    wallet_value: info.wallet_value,
+    status_agree: info.status_agree,
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -34,12 +42,23 @@ export default function Contacts() {
   }, [lang]);
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
     setInfo((prevInfo) => ({
       ...prevInfo,
-      [name]: value,
+      [name]: type === "checkbox" ? checked : value,
     }));
     setInputChanged(true);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("Payload being sent:", post);
+    try {
+      const res = await Pages.postContact(post);
+      console.log(res);
+    } catch (error) {
+      console.error("Error posting contact:", error);
+    }
   };
 
   return (
@@ -85,6 +104,7 @@ export default function Contacts() {
               action=""
               style={{ height: "100%" }}
               className="d-flex flex-column justify-content-between"
+              onSubmit={handleSubmit}
             >
               <div className="input-block d-flex g-10">
                 <div className="input-box d-flex flex-column g-10">
@@ -92,14 +112,17 @@ export default function Contacts() {
                   <input
                     type="text"
                     id="firstName"
+                    name="first_name"
                     placeholder="Имя"
                     value={info.first_name}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="input-box d-flex flex-column g-10">
                   <label htmlFor="lastName">Фамилия</label>
                   <input
                     id="lastName"
+                    name="last_name"
                     placeholder="Фамилия"
                     type="text"
                     value={info.last_name}
@@ -129,6 +152,7 @@ export default function Contacts() {
                   <input
                     type="text"
                     id="email"
+                    name="email"
                     placeholder="Электронная почта"
                     value={info.email}
                     onChange={handleChange}
@@ -136,16 +160,23 @@ export default function Contacts() {
                 </div>
                 <div className="input-box d-flex flex-column g-10">
                   <label htmlFor="phone">Телефон</label>
-                  <input id="phone" placeholder="Телефон" type="text" />
+                  <input
+                    id="phone"
+                    name="phone"
+                    placeholder="Телефон"
+                    type="text"
+                    value={info.phone}
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
               <div className="input-box d-flex flex-column g-10">
-                <label htmlFor="recovery">Тип восстановления</label>
+                <label htmlFor="recovery_type">Тип восстановления</label>
                 <select
                   className="input-select"
-                  name="recovery"
-                  id="recovery"
-                  value={info.recovery}
+                  name="recovery_type"
+                  id="recovery_type"
+                  value={info.recovery_type}
                   onChange={handleChange}
                 >
                   {contact.recovery?.map((el, id) => (
@@ -173,9 +204,10 @@ export default function Contacts() {
                   </select>
                 </div>
                 <div className="input-box d-flex flex-column g-10">
-                  <label htmlFor="wallet_volume">Объем кошелька</label>
+                  <label htmlFor="wallet_value">Объем кошелька</label>
                   <input
-                    id="wallet_volume"
+                    id="wallet_value"
+                    name="wallet_value"
                     placeholder="Объем кошелька"
                     type="text"
                     value={info.wallet_value}
@@ -184,7 +216,13 @@ export default function Contacts() {
                 </div>
               </div>
               <label className="checkbox-container">
-                <input type="checkbox" id="subscribe" name="subscribe" />
+                <input
+                  type="checkbox"
+                  id="status_agree"
+                  name="status_agree"
+                  checked={info.status_agree}
+                  onChange={handleChange}
+                />
                 <span className="checkmark"></span>
                 <p>
                   {t("checkboxText")} <span>{t("userAgreement")}</span>

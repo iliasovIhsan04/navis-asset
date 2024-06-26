@@ -60,4 +60,12 @@ export const Pages = {
         throw error;
       });
   },
+  postContact: (post) => {
+    return instance
+      .post("/create/application/", post)
+      .then((response) => response.data)
+      .catch((error) => {
+        throw error;
+      });
+  },
 };

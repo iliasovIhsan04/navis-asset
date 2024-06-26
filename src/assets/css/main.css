@@ -38,6 +38,10 @@
 }
 .arrow {
   color: var(--red);
+  transition: transform 300ms ease;
+}
+.arrow.animation {
+  transform: rotate(-45deg);
 }
 .question-content {
   margin: 0 !important;
@@ -47,7 +51,13 @@
 }
 .answer-container {
   overflow: hidden;
-  transition: max-height 5s ease;
+}
+.answer-description {
+  transition: transform 300ms ease;
+  opacity: 0;
+}
+.answer-container-inner {
+  opacity: 1;
 }
 .border {
   width: 100%;
