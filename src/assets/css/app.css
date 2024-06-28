@@ -4,6 +4,10 @@
 }
 .nav-link-box {
   gap: 40px;
+  display: flex;
+  @media (max-width: 992px) {
+    display: none !important;
+  }
 }
 .language-block {
   gap: 10px;
@@ -24,12 +28,12 @@
   background: #f5f7fa;
   padding: 34px 50px 34px 34px;
   border-radius: 30px;
-  height: 535px;
+  min-height: 535px;
 }
 .wallet-recovery-img-box {
   position: relative;
   overflow: hidden;
-  height: 535px;
+  min-height: 535px;
 }
 .return-the-money {
   width: 100%;
@@ -64,7 +68,7 @@
 .team-box-conditions-block,
 .we-will-help {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
   margin: 40px 0 0 0;
 }
@@ -79,7 +83,7 @@
   height: 100px;
 }
 .we-will-help {
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr)) !important;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
 }
 .we-will-help-box,
 .white-backg-contact {
@@ -146,10 +150,12 @@
 .news {
   gap: 20px !important;
 }
-.news-box {
+.news-box,
+.news-box1 {
   min-height: 510px;
   gap: 30px;
 }
+
 .news-inter-box {
   display: grid;
   gap: 20px;

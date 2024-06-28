@@ -21,13 +21,13 @@ const News = () => {
   return (
     <div className="container">
       <h2 className="title-page">{t("news")}</h2>
-      <div className="news wallet-recovery">
+      <div className="news-comp-img wallet-recovery">
         {news?.map((item, index) => (
           <>
             {item.is_display === true ? (
               <NavLink to={`/news-details/${item.slug}`}>
                 <div
-                  className="news-box news-inter-box d-flex flex-column justify-content-between"
+                  className="news-box1 news-inter-box d-flex flex-column justify-content-between"
                   key={index}
                 >
                   <img

@@ -19,7 +19,7 @@ const Header = () => {
           <NavLink to="/">
             <img src={projectLogo} alt="Project Logo" />
           </NavLink>
-          <div className="nav-link-box d-flex">
+          <div className="nav-link-box">
             <NavLink to="/" className="nav-link-page" onClick={handleScroll}>
               {t("services")}
             </NavLink>

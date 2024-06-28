@@ -15,14 +15,14 @@ const WalletRecovery = () => {
             {t("transparent")}
           </h1>
           <span className="text-span"> {t("easiest")} </span>
-          <div className="d-flex" style={{ gap: "10px" }}>
+          <div className="d-flex wallet-btn-block" style={{ gap: "10px" }}>
             <button
-              className="submit-application-btn"
+              className="submit-application-btn "
               onClick={() => navigate("/application")}
             >
               {t("submitYourApplication")}
             </button>
-            <button className="more-details-btn d-flex aling-items-center">
+            <button className="more-details-btn d-flex align-items-center justify-content-center">
               {t("moreDetails")} <GoArrowUpRight size={24} />
             </button>
           </div>
