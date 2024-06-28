@@ -4,6 +4,7 @@
 @import url("./style.css");
 @import url("./index.css");
 @import url("./app.css");
+@import url("./adaptive.css");
 
 .top-page {
   margin: 200px 0;

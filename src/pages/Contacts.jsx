@@ -4,12 +4,15 @@ import { MdOutlineCall } from "react-icons/md";
 import { PiMapPin } from "react-icons/pi";
 import { VscMail } from "react-icons/vsc";
 import { Pages } from "../api";
+import Loading from "../assets/UI/Loading/Loading";
 
 export default function Contacts() {
   const [contact, setContact] = useState([]);
   const lang = localStorage.getItem("lang");
   const [inputChanged, setInputChanged] = useState(false);
-  const [info, setInfo] = useState({
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState({});
+  const initialInfoState = {
     country: "",
     wallet_type: "",
     recovery_type: "",
@@ -19,7 +22,8 @@ export default function Contacts() {
     phone: "",
     wallet_value: 0,
     status_agree: true,
-  });
+  };
+  const [info, setInfo] = useState(initialInfoState);
 
   const post = {
     country: info.country,
@@ -35,8 +39,15 @@ export default function Contacts() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await Pages.getContact();
-      setContact(res.data);
+      setIsLoading(true);
+      try {
+        const res = await Pages.getContact();
+        setContact(res.data);
+      } catch (error) {
+        console.error("Error fetching contact data:", error);
+      } finally {
+        setIsLoading(false);
+      }
     };
     fetchData();
   }, [lang]);
@@ -52,14 +63,25 @@ export default function Contacts() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Payload being sent:", post);
+    setIsLoading(true);
     try {
       const res = await Pages.postContact(post);
       console.log(res);
+      setInfo(initialInfoState); // Reset the form fields
+      setError({}); // Clear any previous errors
     } catch (error) {
+      if (error?.response?.data) {
+        setError(error.response.data);
+      } else {
+        setError({ general: "An error occurred. Please try again later." });
+      }
       console.error("Error posting contact:", error);
+    } finally {
+      setIsLoading(false);
     }
   };
+
+  console.log(error);
 
   return (
     <div className="contact">
@@ -99,14 +121,14 @@ export default function Contacts() {
             </div>
             <p className="text-contact">{t("contactText")}</p>
           </div>
-          <div className="contacts-card we-will-help-box ">
+          <div className="contacts-card we-will-help-box">
             <form
               action=""
               style={{ height: "100%" }}
               className="d-flex flex-column justify-content-between"
               onSubmit={handleSubmit}
             >
-              <div className="input-block d-flex g-10">
+              <div className="input-block g-10">
                 <div className="input-box d-flex flex-column g-10">
                   <label htmlFor="firstName">Имя</label>
                   <input
@@ -117,6 +139,9 @@ export default function Contacts() {
                     value={info.first_name}
                     onChange={handleChange}
                   />
+                  {error.first_name && (
+                    <p className="red">{error.first_name}</p>
+                  )}
                 </div>
                 <div className="input-box d-flex flex-column g-10">
                   <label htmlFor="lastName">Фамилия</label>
@@ -128,6 +153,7 @@ export default function Contacts() {
                     value={info.last_name}
                     onChange={handleChange}
                   />
+                  {error.last_name && <p className="red">{error.last_name}</p>}
                 </div>
               </div>
               <div className="input-box d-flex flex-column g-10">
@@ -145,8 +171,9 @@ export default function Contacts() {
                     </option>
                   ))}
                 </select>
+                {error.country && <p className="red">{error.country}</p>}
               </div>
-              <div className="input-block d-flex g-10">
+              <div className="input-block g-10">
                 <div className="input-box d-flex flex-column g-10">
                   <label htmlFor="email">Почта</label>
                   <input
@@ -157,6 +184,7 @@ export default function Contacts() {
                     value={info.email}
                     onChange={handleChange}
                   />
+                  {error.email && <p className="red">{error.email}</p>}
                 </div>
                 <div className="input-box d-flex flex-column g-10">
                   <label htmlFor="phone">Телефон</label>
@@ -168,6 +196,7 @@ export default function Contacts() {
                     value={info.phone}
                     onChange={handleChange}
                   />
+                  {error.phone && <p className="red">{error.phone}</p>}
                 </div>
               </div>
               <div className="input-box d-flex flex-column g-10">
@@ -185,6 +214,9 @@ export default function Contacts() {
                     </option>
                   ))}
                 </select>
+                {error.recovery_type && (
+                  <p className="red">{error.recovery_type}</p>
+                )}
               </div>
               <div className="input-block g-10">
                 <div className="input-box d-flex flex-column g-10">
@@ -202,6 +234,9 @@ export default function Contacts() {
                       </option>
                     ))}
                   </select>
+                  {error.wallet_type && (
+                    <p className="red">{error.wallet_type}</p>
+                  )}
                 </div>
                 <div className="input-box d-flex flex-column g-10">
                   <label htmlFor="wallet_value">Объем кошелька</label>
@@ -228,7 +263,9 @@ export default function Contacts() {
                   {t("checkboxText")} <span>{t("userAgreement")}</span>
                 </p>
               </label>
-              <button type="submit">Отправить заявку</button>
+              <button type="submit">
+                {isLoading ? <Loading /> : " Отправить заявку"}
+              </button>
             </form>
           </div>
         </div>

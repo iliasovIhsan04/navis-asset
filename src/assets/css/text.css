@@ -183,3 +183,10 @@
 .we-will-help-box:first-child span {
   color: var(--white) !important;
 }
+.red {
+  font-weight: 400;
+  font-size: 12px;
+  color: red;
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+}

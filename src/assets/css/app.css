@@ -425,3 +425,6 @@
   background: var(--white);
   border-radius: 50%;
 }
+.width-input {
+  width: 100% !important;
+}
