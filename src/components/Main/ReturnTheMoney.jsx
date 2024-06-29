@@ -6,9 +6,10 @@ const ReturnTheMoney = () => {
   const navigate = useNavigate();
   return (
     <div className="container">
-      <div className="return-the-money d-flex aling-items-center justify-content-between top-page">
+      <div className="return-the-money  top-page">
         <h2>{t("moneyText")}</h2>
-        <div className="money-btn_block d-flex flex-column justify-content-between align-items-end">
+        <div className="money-icons"></div>
+        <div className="money-btn_block">
           <span className="text-span"> {t("moneyText2")}</span>
           <button onClick={() => navigate("/application")}>
             {t("moneyBtn")}

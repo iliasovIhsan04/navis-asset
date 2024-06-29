@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer d-flex flex-column justify-content-between">
       <div className="container">
-        <div className="footer-block d-flex justify-content-between">
+        <div className="footer-block d-flex justify-content-between flex-wrap">
           <div className="d-flex flex-column">
             <div className="footer-icons"></div>
             <span className="text-span footer-text">
@@ -17,7 +17,7 @@ const Footer = () => {
               navisasset@mail.com
             </a>
           </div>
-          <div className="footer-box2">
+          <div className="footer-box2 flex-wrap">
             <div className="d-flex flex-column">
               <h2 className="title-internal-footer">Основное</h2>
               <div className="link-footer-block d-flex flex-column">
@@ -28,7 +28,9 @@ const Footer = () => {
                   Контакты
                 </NavLink>
                 <NavLink className="link-footer">Партнеры</NavLink>
-                <NavLink className="link-footer">Почему NavisAsset?</NavLink>
+                <NavLink className="link-footer">
+                  Почему <br /> NavisAsset?
+                </NavLink>
               </div>
             </div>
             <div className="d-flex flex-column footer-order2">
@@ -59,7 +61,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="made-with d-flex align-items-center">
-        <div className="container d-flex justify-content-between">
+        <div className="made-width-inter container d-flex justify-content-between">
           <p>© 2024 NavisAsset Все права защищены</p>
           <h2>
             Made with ❤️ by <a href="">NavisDevs</a>

@@ -40,7 +40,9 @@ const News = () => {
                       <h4 className="news-description news-description-text1">
                         {item.title}
                       </h4>
-                      <span className="text-span">{item.created_at}</span>
+                      <span className="news-little-text">
+                        {item.created_at}
+                      </span>
                     </div>
                     <div className="news-icons-block-inter">
                       <div className="news-icons news-icons1"></div>
@@ -64,7 +66,9 @@ const News = () => {
                   <div className="d-flex flex-column justify-content-between news-box-inter">
                     <h4 className="news-description">{item.title}</h4>
                     <div className="news-icons-block-inter d-flex align-items-end justify-content-between">
-                      <span className="text-span">{item.created_at}</span>
+                      <span className="news-little-text">
+                        {item.created_at}
+                      </span>
                       <div className="news-icons"></div>
                     </div>
                   </div>

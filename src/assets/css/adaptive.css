@@ -1,15 +1,51 @@
+@media (max-width: 1132px) {
+  .footer-box2 {
+    width: 100%;
+    padding: 50px 0px;
+    display: grid;
+    display: flex;
+    gap: 80px;
+  }
+  .footer-order3,
+  .footer-order2 {
+    margin-left: 0;
+  }
+}
 @media (max-width: 992px) {
-  .nav-link-box {
+  .nav-link-box,
+  .language-box {
     display: none !important;
+  }
+  .project-logo-img {
+    width: 112px;
+    height: 30px;
   }
   .news-box {
     margin-top: 10px;
   }
+  .burger-menu {
+    display: block;
+  }
+}
+@media (max-width: 903px) {
+  .money-btn_block span {
+    text-align: start;
+  }
+  .return-the-money {
+    height: 500px;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  .money-btn_block {
+    justify-content: start !important;
+    align-items: start;
+    gap: 20px;
+  }
+  .money-btn_block button {
+    margin-left: 0;
+  }
 }
 @media (max-width: 768px) {
-  .language-box {
-    display: none;
-  }
   .question-content {
     font-size: 18px !important;
   }
@@ -20,12 +56,35 @@
     min-height: 350px;
     gap: 10px;
   }
+  .return-the-money {
+    padding: 30px 16px;
+    display: block;
+    border-radius: 16px;
+  }
+  .return-the-money h2 {
+    font-size: 24px;
+    margin-bottom: 30px !important;
+  }
+}
+@media (max-width: 702px) {
+  .footer-box2 {
+    gap: 25px;
+  }
+}
+@media (max-width: 579px) {
+  .social-network-block {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 576px) {
   .wallet-recovery,
   .team-box-conditions-block,
   .we-will-help {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .made-width-inter {
+    flex-direction: column !important;
+    align-items: center !important;
   }
   .wallet-recovery-inner-box h1 {
     font-size: 36px;
@@ -51,6 +110,15 @@
   .answer-description {
     padding-right: 90px;
     font-size: 14px !important;
+  }
+  .news-box2 {
+    gap: 10px !important;
+  }
+  .news-box {
+    gap: 20px;
+  }
+  .the-link {
+    font-size: 20px;
   }
 }
 @media (max-width: 500px) {
