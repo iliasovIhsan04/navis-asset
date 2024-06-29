@@ -49,12 +49,55 @@
   .question-content {
     font-size: 18px !important;
   }
+  .garants {
+    margin: 120px 0 0 0;
+  }
   .news-img-block {
     height: 260px;
+  }
+  .about {
+    min-height: 210px !important;
+  }
+  .founder-block,
+  .customer-card-last {
+    min-height: 100px;
+  }
+  .founder-b-text {
+    font-size: 14px;
+  }
+  .founder-span {
+    font-size: 12px;
+  }
+  .founder-img {
+    width: 45px;
+    height: 45px;
+  }
+  .title-basic,
+  .profesional-text,
+  .work-text {
+    font-size: 14px;
+  }
+  .garant {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
   }
   .news-box1 {
     min-height: 350px;
     gap: 10px;
+  }
+  .price-txt {
+    font-size: 18px;
+  }
+  .price-card {
+    padding: 16px !important;
+    border-radius: 16px !important;
+  }
+  .customer-card,
+  .guarantee-card {
+    padding: 16px !important;
+  }
+  .big-text {
+    font-size: 24px;
   }
   .return-the-money {
     padding: 30px 16px;
@@ -79,6 +122,9 @@
 @media (max-width: 576px) {
   .wallet-recovery,
   .team-box-conditions-block,
+  .we-will-help {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
   .we-will-help {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
@@ -125,7 +171,7 @@
   .wallet-recovery,
   .team-box-conditions-block,
   .we-will-help {
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   }
   .question-content {
     font-size: 16px !important;
@@ -137,5 +183,27 @@
   }
   .wallet-recovery-inner-box h1 {
     font-size: 30px;
+  }
+  .we-will-help {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+@media (max-width: 400px) {
+  .guarantees {
+    flex-direction: column;
+  }
+  .guarantee-text-box {
+    height: 100px !important;
+  }
+  .guarantee-card {
+    gap: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .founder-block {
+    flex-direction: column;
+  }
+  .customer-card {
+    height: 100px;
   }
 }

@@ -46,7 +46,7 @@ export default function Price() {
           </p>
         </div>
         <div className="price-card customer-card">
-          <h2 className="subtitle2 subtitle1"> {t("walletRecovery")} </h2>
+          <h2 className="subtitle2 subtitle1 price-txt"> {t("walletRecovery")} </h2>
           <h2 className="big-text">
             25%{" "}
             <span className="price-wallet-text"> {t("fromTheWallet")} </span>{" "}

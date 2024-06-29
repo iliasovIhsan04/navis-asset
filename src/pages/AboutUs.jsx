@@ -8,12 +8,15 @@ export default function AboutUs() {
         <h1 className="title-page"> {t("about")} </h1>
         <div className="we-will-help about-box1">
           <div className="about g-10">
-            <div className="d-flex g-10">
+            <div className="d-flex g-10 founder-block">
               <div className="customer-card d-flex align-items-center g-10">
-                <img src={founder} alt="" />
+                <img className="founder-img" src={founder} alt="" />
                 <div className="founder-name d-flex flex-column g-10">
-                  <h3 className="text-span"> {t("founder")} </h3>
-                  <h3 className="title-h3"> {t("founderFN")} </h3>
+                  <h3 className="text-span founder-span"> {t("founder")} </h3>
+                  <h3 className="title-h3 founder-b-text">
+                    {" "}
+                    {t("founderFN")}{" "}
+                  </h3>
                 </div>
               </div>
               <div className="customer-card d-flex flex-column justify-content-between">
@@ -23,7 +26,7 @@ export default function AboutUs() {
             </div>
             <div className="customer-card customer-card-last d-flex flex-column justify-content-between">
               <h2 className="big-text"> 100% </h2>
-              <p className="text-span"> {t("qualityWork")} </p>
+              <p className="text-span work-text"> {t("qualityWork")} </p>
             </div>
           </div>
           <div className="about-img1"></div>
@@ -43,11 +46,11 @@ export default function AboutUs() {
         </div>
         <div className="garants d-grid">
           <div className="d-grid garant">
-            <h3 className="question-content"> {t("guaranteeTitle")} </h3>
+            <h3 className="about-us-content"> {t("guaranteeTitle")} </h3>
             <p className="text-span"> {t("guaranteeText")} </p>
           </div>
           <div className="d-grid garant">
-            <h3 className="question-content"> {t("aboutFounders")} </h3>
+            <h3 className="about-us-content"> {t("aboutFounders")} </h3>
             <p className="text-span">{t("aboutFoundersText")} </p>
           </div>
         </div>

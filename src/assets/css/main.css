@@ -44,7 +44,8 @@
 .arrow.animation {
   transform: rotate(-45deg);
 }
-.question-content {
+.question-content,
+.about-us-content {
   margin: 0 !important;
   text-align: left;
   font-size: 22px;
@@ -66,7 +67,7 @@
   background: #d8d8d8 !important;
 }
 .about {
-  height: 300px;
+  min-height: 300px;
   display: grid;
 }
 .about-us h1 {
