@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
@@ -8,48 +9,44 @@ const Footer = () => {
         <div className="footer-block d-flex justify-content-between flex-wrap">
           <div className="d-flex flex-column">
             <div className="footer-icons"></div>
-            <span className="text-span footer-text">
-              Это международный сервис, где вам <br /> быстро и надежно
-              восстановят ваш <br />
-              забытый криптокошелёк
-            </span>
+            <span className="text-span footer-text">{t("footerText")}</span>
             <a className="the-link" href="">
               navisasset@mail.com
             </a>
           </div>
           <div className="footer-box2 flex-wrap">
             <div className="d-flex flex-column">
-              <h2 className="title-internal-footer">Основное</h2>
+              <h2 className="title-internal-footer">{t("basics")}</h2>
               <div className="link-footer-block d-flex flex-column">
                 <NavLink to="/about-us" className="link-footer">
-                  О нас
+                  {t("aboutUs")}
                 </NavLink>
                 <NavLink to="/contacts" className="link-footer">
-                  Контакты
+                  {t("contacts")}
                 </NavLink>
-                <NavLink className="link-footer">Партнеры</NavLink>
+                <NavLink className="link-footer">{t("partners")}</NavLink>
                 <NavLink className="link-footer">
-                  Почему <br /> NavisAsset?
+                  {t("why")} <br /> NavisAsset?
                 </NavLink>
               </div>
             </div>
             <div className="d-flex flex-column footer-order2">
-              <h2 className="title-internal-footer">Пользователям</h2>
+              <h2 className="title-internal-footer">{t("users")}</h2>
               <div className="link-footer-block d-flex flex-column">
-                <NavLink className="link-footer">Услуги</NavLink>
+                <NavLink className="link-footer"> {t("services")}</NavLink>
                 <NavLink to="/reviews" className="link-footer">
-                  Отзывы
+                  {t("reviews")}
                 </NavLink>
                 <NavLink to="/price" className="link-footer">
-                  Прайс
+                  {t("price")}
                 </NavLink>
                 <NavLink to="/all-news" className="link-footer">
-                  Новости
+                  {t("news")}
                 </NavLink>
               </div>
             </div>
             <div className="d-flex flex-column footer-order3">
-              <h2 className="title-internal-footer">Мы в соцсетях</h2>
+              <h2 className="title-internal-footer">{t("networks")}</h2>
               <div className="social-network-block d-flex">
                 <div className="social-network-box1"></div>
                 <div className="social-network-box2"></div>
@@ -62,7 +59,7 @@ const Footer = () => {
       </div>
       <div className="made-with d-flex align-items-center">
         <div className="made-width-inter container d-flex justify-content-between">
-          <p>© 2024 NavisAsset Все права защищены</p>
+          <p>{t("reserved")}</p>
           <h2>
             Made with ❤️ by <a href="">NavisDevs</a>
           </h2>
