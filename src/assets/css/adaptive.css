@@ -88,7 +88,8 @@
   .price-txt {
     font-size: 18px;
   }
-  .price-card {
+  .price-card,
+  .contacts-card {
     padding: 16px !important;
     border-radius: 16px !important;
   }
@@ -96,8 +97,12 @@
   .guarantee-card {
     padding: 16px !important;
   }
-  .big-text {
+  .big-text,
+  .technical-support {
     font-size: 24px;
+  }
+  .white-backg-contact {
+    gap: 40px !important;
   }
   .return-the-money {
     padding: 30px 16px;
@@ -112,6 +117,15 @@
 @media (max-width: 702px) {
   .footer-box2 {
     gap: 25px;
+  }
+}
+@media (max-width: 665px) {
+  .input-block {
+    grid-template-columns: 1fr;
+  }
+  .input-box,
+  .checkbox-container {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 579px) {
@@ -163,8 +177,13 @@
   .news-box {
     gap: 20px;
   }
-  .the-link {
+  .the-link,
+  .technical-support {
     font-size: 20px;
+  }
+  .address-box1 {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr !important;
   }
 }
 @media (max-width: 500px) {

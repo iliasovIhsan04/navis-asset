@@ -91,8 +91,14 @@ export default function Contacts() {
             <div className="contact-inter-box d-grid">
               <h2 className="technical-support">{t("technical")}</h2>
               <div className="address-call-block d-grid">
-                <div className="address-box d-flex">
-                  <PiMapPin size={24} style={{ color: "white" }} />
+                <div className="address-box address-box1 d-flex">
+                  <div>
+                    <PiMapPin
+                      className="icons-map"
+                      size={24}
+                      style={{ color: "white" }}
+                    />
+                  </div>
                   <p>{t("address")}</p>
                 </div>
                 <div className="address-box d-flex">
@@ -121,7 +127,7 @@ export default function Contacts() {
             </div>
             <p className="text-contact">{t("contactText")}</p>
           </div>
-          <div className="contacts-card we-will-help-box">
+          <div className="contacts-card we-will-help-box contact-gap">
             <form
               action=""
               style={{ height: "100%" }}
