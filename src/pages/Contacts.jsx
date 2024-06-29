@@ -67,8 +67,8 @@ export default function Contacts() {
     try {
       const res = await Pages.postContact(post);
       console.log(res);
-      setInfo(initialInfoState); // Reset the form fields
-      setError({}); // Clear any previous errors
+      setInfo(initialInfoState); 
+      setError({}); 
     } catch (error) {
       if (error?.response?.data) {
         setError(error.response.data);

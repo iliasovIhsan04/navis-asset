@@ -81,7 +81,7 @@ const Application = () => {
     <div className="application">
       <div className="container">
         <div className="wallet-recovery">
-          <div className="application-card d-flex flex-column justify-content-between">
+          <div className="application-card d-flex flex-column justify-content-between application-adaptive">
             <div className="application-box">
               <div className="will-icons-backg application-icons-box1"></div>
               <div className="d-grid aplication-text-box">

@@ -11,6 +11,11 @@
     margin-left: 0;
   }
 }
+@media (max-width: 1027px) {
+.application-adaptive {
+  min-height: 0px !important;
+}
+}
 @media (max-width: 992px) {
   .nav-link-box,
   .language-box {
