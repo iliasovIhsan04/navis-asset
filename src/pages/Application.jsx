@@ -85,22 +85,28 @@ const Application = () => {
             <div className="application-box">
               <div className="will-icons-backg application-icons-box1"></div>
               <div className="d-grid aplication-text-box">
-                <h3 className="title-h3">{t("trustedWallet")}</h3>
-                <span className="text-span">{t("trustedName")}</span>
+                <h3 className="title-h3 application-title3">
+                  {t("trustedWallet")}
+                </h3>
+                <span className="text-span application-text3">{t("trustedName")}</span>
               </div>
             </div>
             <div className="application-box">
               <div className="will-icons-backg application-icons-box2"></div>
               <div className="d-grid aplication-text-box">
-                <h3 className="title-h3">{t("secureStorage")}</h3>
-                <span className="text-span">{t("informationAbout")}</span>
+                <h3 className="title-h3 application-title3">
+                  {t("secureStorage")}
+                </h3>
+                <span className="text-span application-text3">{t("informationAbout")}</span>
               </div>
             </div>
             <div className="application-box">
               <div className="will-icons-backg application-icons-box2"></div>
               <div className="d-grid aplication-text-box">
-                <h3 className="title-h3">{t("getStarted")}</h3>
-                <span className="text-span">{t("getStartedText")}</span>
+                <h3 className="title-h3 application-title3">
+                  {t("getStarted")}
+                </h3>
+                <span className="text-span application-text3">{t("getStartedText")}</span>
               </div>
             </div>
           </div>

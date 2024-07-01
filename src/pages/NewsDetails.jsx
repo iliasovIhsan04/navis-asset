@@ -28,8 +28,8 @@ const NewsDetails = () => {
         </NavLink>
         <div className="wallet-recovery news-details-grid">
           <div className="d-grid news-details-grid-box1">
-            <div className="news-box news-inter-box">
-              <h3 className="question-content">{newsDetails?.news?.title}</h3>
+            <div className="all-news-box1 news-inter-box">
+              <h3 className="read-also-title">{newsDetails?.news?.title}</h3>
               <p className="text-span">{newsDetails?.news?.created_at}</p>
               <img
                 className="news-img-block"
@@ -41,8 +41,8 @@ const NewsDetails = () => {
               {newsDetails?.news?.description}
             </p>
           </div>
-          <div className="news-box d-flex flex-column">
-            <h3 className="question-content">{t("readAlso")}</h3>
+          <div className="all-news-box1 d-flex flex-column read-also-block">
+            <h3 className="read-also-title">{t("readAlso")}</h3>
             {newsDetails?.similar_news?.map((item, index) => (
               <NavLink to={`/news-details/${item.slug}`}>
                 <div className="news-box2 d-flex " key={index}>

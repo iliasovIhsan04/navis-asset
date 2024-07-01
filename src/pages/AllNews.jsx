@@ -24,7 +24,7 @@ const AllNews = () => {
             <>
               {el.is_display === true ? (
                 <NavLink to={`/news-details/${el.slug}`}>
-                  <div className="news-box news-inter-box" key={index}>
+                  <div className="all-news-box1 news-inter-box" key={index}>
                     <img
                       className="news-img-block"
                       src={el.img}
@@ -36,10 +36,10 @@ const AllNews = () => {
                         <span className="text-span">{el.created_at}</span>
                       </div>
                       <div className="news-icons-block-inter">
-                        <div className="news-icons"></div>
+                        <div className="news-icons news-icons1"></div>
                       </div>
                     </div>
-                    <div className="news-box d-flex flex-column">
+                    <div className="all-news-box1 d-flex flex-column">
                       {allNews?.slice(0, 2).map((item, index) => (
                         <NavLink to={`/news-details/${item.slug}`}>
                           <div className="news-box2 d-flex " key={index}>
@@ -66,7 +66,7 @@ const AllNews = () => {
               )}
             </>
           ))}
-          <div className="news-box d-flex flex-column">
+          <div className="all-news-box1 d-flex flex-column">
             {allNews?.map((item, index) => (
               <NavLink to={`/news-details/${item.slug}`}>
                 <div className="news-box2 d-flex " key={index}>

@@ -206,3 +206,9 @@
 .burger-nav-link-page:hover {
   color: var(--red);
 }
+.read-also-title {
+  font-size: 24px;
+  color: var(--black);
+  font-weight: 600;
+  line-height: 1.1;
+}
